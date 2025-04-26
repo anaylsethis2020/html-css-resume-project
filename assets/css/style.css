@@ -154,8 +154,8 @@ h1 {
 
 .project-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto; /* Adjust height automatically */
+    object-fit: contain; /* Ensure the entire image fits within the container */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
