@@ -106,7 +106,7 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -176,7 +176,8 @@ form {
     flex-direction: column;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -188,4 +189,3 @@ form button.btn-primary {
     border: none;
     cursor: pointer;
 }
-
