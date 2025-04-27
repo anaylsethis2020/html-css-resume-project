@@ -156,37 +156,38 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
     gap: 20px;
-    align-items: center;
+    align-items: start; /* Align items at the top */
     padding: 40px 20px;
 }
 
-.about-video {
-    text-align: center;
-}
-
-.about-video video {
+/* Hello World GIF */
+.about-gif {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Center the GIF and add spacing below */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.about-description {
-    text-align: center;
+/* About Text */
+.about-text {
+    text-align: left;
+    margin-top: 20px;
 }
 
-.about-description h3 {
-    font-size: 2rem;
+.about-text h2 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
-.about-description p {
+.about-text p {
     margin-bottom: 15px;
     font-size: 1rem;
     line-height: 1.6;
 }
 
-.about-description .btn-primary {
+.about-text .btn-primary {
     display: inline-block;
     padding: 10px 20px;
     background-color: #e63946;
@@ -196,134 +197,58 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.about-description .btn-primary:hover {
+.about-text .btn-primary:hover {
     background-color: #d62839;
 }
 
-.about-image img {
+/* Profile Photo */
+.profile-photo {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Motivation Video */
-.motivation-video {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f8f9fa;
-}
-
-.video-container {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-}
-
-.video-container video {
-    width: 100%;
+/* Coding GIF */
+.coding-gif {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.video-container button {
-    margin-top: 20px;
+/* Center Column: Download Button */
+.download-button {
+    text-align: center;
+    margin-top: 20px; /* Add spacing above the button */
 }
 
-.btn-primary {
+.download-button .btn-primary {
     display: inline-block;
     padding: 10px 20px;
-    background: #e63946;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-    background: #d62828;
-}
-
-/* Contact Hero Section */
-.contact-hero {
-    background: #f8f9fa;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.contact-hero h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact-hero p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Contact Form Section */
-.contact-form-section {
-    padding: 40px 20px;
-    background: #ffffff;
-}
-
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-container input,
-.form-container textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-container button {
-    padding: 10px;
-    background: #e63946;
+    background-color: #e63946;
     color: #fff;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.form-container button:hover {
-    background: #d62839;
+.download-button .btn-primary:hover {
+    background-color: #d62839;
 }
 
-.form-note {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 10px;
-}
-
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column;
+        grid-template-columns: 1fr; /* Stack columns vertically */
         text-align: center;
     }
 
-    .highlights-grid {
-        flex-direction: column;
+    .about-item {
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        text-align: center;
     }
 }

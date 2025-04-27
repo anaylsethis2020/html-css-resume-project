@@ -41,37 +41,38 @@
     <!-- About Content -->
     <section class="about-content">
         <div class="container about-container">
-            <!-- Left Column: Video -->
-            <div class="about-video">
-                <video autoplay muted loop playsinline>
-                    <source src="assets/videos/hello world gif.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <!-- Left Column: Hello World GIF + About Text -->
+            <div class="about-item">
+                <img src="assets/images/Hello_world.gif" alt="Hello World GIF" class="about-gif">
+                <div class="about-text">
+                    <h2>I'm Abel 👋</h2>
+                    <p>I’m a front-end developer passionate about creative solutions, storytelling through code, and building beautiful experiences.</p>
+                    <p>Skills include HTML5, CSS3, Bootstrap 5, GitHub workflow, and UX design principles.</p>
+                    <p>I’m offering freelance services focusing on responsive websites, branding pages, and UX consultation. My future focus is growing into AI-driven websites and smarter app solutions.</p>
+                </div>
             </div>
 
-            <!-- Center Column: Text -->
-            <div class="about-description">
-                <h3>I'm Abel 👋</h3>
-                <p>I’m a front-end developer passionate about creative solutions, storytelling through code, and
-                    building beautiful experiences.</p>
-                <p>Skills include HTML5, CSS3, Bootstrap 5, GitHub workflow, and UX design principles.</p>
-                <p>I’m offering freelance services focusing on responsive websites, branding pages, and UX consultation.
-                    My future focus is growing into AI-driven websites and smarter app solutions.</p>
-                <a href="assets/docs/abel_cv_2025.docx" class="btn-primary" download>Download My CV</a>
+            <!-- Center Column: Profile Photo -->
+            <div class="about-item">
+                <img src="assets/images/profile.jpg" alt="Abel Beyene" class="profile-photo">
+                <div class="download-button">
+                    <a href="assets/docs/Abel_cv_2025.docx" download class="btn-primary">Download My CV</a>
+                </div>
             </div>
 
-            <!-- Right Column: Image -->
-            <div class="about-image">
-                <img src="assets/images/profile.jpg" alt="Abel Beyene">
+            <!-- Right Column: Code is Poetry GIF -->
+            <div class="about-item">
+                <img src="assets/images/coding_is_poetry.gif" alt="Coding is Poetry GIF" class="about-gif">
             </div>
         </div>
     </section>
 
+
     <!-- Steve Jobs Motivation Video -->
     <section class="motivation-video">
         <div class="video-container">
-            <video id="steveVideo" width="100%" poster="assets/images/motavational-creative-image.png">
-                <source src="assets/images/about me - steve jobs gif-with audio.mp4" type="video/mp4">
+            <video id="steveVideo" style="width: 100%;" poster="assets/images/motavational-creative-image.png">
+                <source src="assets/images/about-me-steve-jobs-gif-with-audio.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <button class="btn-primary" onclick="document.getElementById('steveVideo').play();">▶️ Play Steve Jobs
