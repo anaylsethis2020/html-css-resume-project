@@ -186,6 +186,34 @@ form textarea {
 }
 
 form button.btn-primary {
+    background-color: #e63946;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button.btn-primary:hover {
+    background-color: #d62839;
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background-color: #ff4b2b;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #ff3a1a;
 }
