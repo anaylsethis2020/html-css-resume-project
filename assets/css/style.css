@@ -306,3 +306,16 @@ body {
 .btn-primary:hover {
     background-color: #d62839;
 }
+
+/* Responsive Design Media Queries here... */
+
+/* === Steve Jobs Motivation Video Section === */
+.motivation-video {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .motivation-video .btn-primary {
+    margin-top: 20px;
+  }
+  
