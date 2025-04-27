@@ -154,9 +154,11 @@ body {
 /* About Content Section */
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Three equal columns */
     gap: 20px;
-    align-items: start; /* Align items at the top */
+    align-items: start;
+    /* Align items at the top */
     padding: 40px 20px;
 }
 
@@ -165,7 +167,8 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 20px auto; /* Center the GIF and add spacing below */
+    margin: 0 auto 20px auto;
+    /* Center the GIF and add spacing below */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -220,7 +223,8 @@ body {
 /* Center Column: Download Button */
 .download-button {
     text-align: center;
-    margin-top: 20px; /* Add spacing above the button */
+    margin-top: 20px;
+    /* Add spacing above the button */
 }
 
 .download-button .btn-primary {
@@ -240,7 +244,8 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
-        grid-template-columns: 1fr; /* Stack columns vertically */
+        grid-template-columns: 1fr;
+        /* Stack columns vertically */
         text-align: center;
     }
 
@@ -251,4 +256,53 @@ body {
     .about-text {
         text-align: center;
     }
+}
+
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+.btn-primary {
+    background-color: #e63946;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d62839;
 }
