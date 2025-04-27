@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Abel Beyene</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -29,41 +31,51 @@
     </header>
 
     <!-- About Hero -->
-    <section class="about-hero">
-        <div class="about-bg">
-            <img src="assets/images/about-me-custom-background-image.png" alt="About Background">
-        </div>
-        <div class="about-text">
-            <h2>Who I Am</h2>
-            <p>Creative Front-End Developer | Visionary Coder | Future Innovator</p>
+    <section class="about-hero fixed-bg">
+        <div class="container about-text">
+            <h2>Discover My Journey</h2>
+            <p>Turning passion into profession through clean design and powerful storytelling.</p>
         </div>
     </section>
 
-    <!-- About Me Content -->
+    <!-- About Content -->
     <section class="about-content">
         <div class="container about-container">
+            <!-- Left Column: Video -->
+            <div class="about-video">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/hello world gif.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Center Column: Text -->
+            <div class="about-description">
+                <h3>I'm Abel 👋</h3>
+                <p>I’m a front-end developer passionate about creative solutions, storytelling through code, and
+                    building beautiful experiences.</p>
+                <p>Skills include HTML5, CSS3, Bootstrap 5, GitHub workflow, and UX design principles.</p>
+                <p>I’m offering freelance services focusing on responsive websites, branding pages, and UX consultation.
+                    My future focus is growing into AI-driven websites and smarter app solutions.</p>
+                <a href="assets/docs/abel_cv_2025.docx" class="btn-primary" download>Download My CV</a>
+            </div>
+
+            <!-- Right Column: Image -->
             <div class="about-image">
                 <img src="assets/images/profile.jpg" alt="Abel Beyene">
             </div>
-            <div class="about-description">
-                <h3>Hello, I'm Abel 👋</h3>
-                <p>I’m a passionate front-end developer dedicated to transforming ideas into exceptional web experiences.</p>
-                <p>Through Code Institute's Fullstack Bootcamp, I've developed expertise in HTML5, CSS3, Bootstrap, UX Principles, and responsive web design.</p>
-                <p>Driven by creativity and innovation, I combine clean code with powerful storytelling, ensuring every website leaves a memorable impression. </p>
-                <p>I'm preparing to offer freelance services building inspiring, fast, and mobile-first websites — with a future focus on JavaScript and AI-integrated apps.</p>
-                <a href="assets/images/Abel CV_2025.docx" class="btn-primary" download>Download My CV</a>
-            </div>
         </div>
     </section>
 
-    <!-- Motivational Video Section -->
+    <!-- Steve Jobs Motivation Video -->
     <section class="motivation-video">
-        <video autoplay muted loop class="video-section">
-            <source src="assets/images/about me - steve jobs gif-with audio.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="video-overlay">
-            <h3>“Stay Hungry. Stay Foolish.”</h3>
+        <div class="video-container">
+            <video id="steveVideo" width="100%" poster="assets/images/motavational-creative-image.png">
+                <source src="assets/images/about me - steve jobs gif-with audio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="btn-primary" onclick="document.getElementById('steveVideo').play();">▶️ Play Steve Jobs
+                Quote</button>
         </div>
     </section>
 
@@ -73,4 +85,5 @@
     </footer>
 
 </body>
+
 </html>

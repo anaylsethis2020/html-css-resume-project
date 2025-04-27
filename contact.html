@@ -9,36 +9,51 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-profile">
+                <img src="assets/images/profile.jpg" alt="Abel Profile" class="profile-img">
+                <h1 class="logo-text">Abel Beyene</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header class="header">
-    <div class="container nav-container">
-        <!-- Navigation goes here -->
-    </div>
-</header>
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h2>Let's Get in Touch</h2>
+            <p>I'm open to freelance projects, collaborations, or just a friendly hello!</p>
+        </div>
+    </section>
 
-<section class="contact-hero">
-    <div class="container">
-        <h2>Let's Get in Touch</h2>
-        <p>I'm open to freelance projects, collaborations, or just a friendly hello!</p>
-    </div>
-</section>
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container form-container">
+            <form action="https://getform.io/f/amdkrvpb" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-contact">Send Message</button>
+            </form>
+            <p class="form-note">* I'll respond to your inquiry as soon as possible!</p>
+        </div>
+    </section>
 
-<section class="contact-form-section">
-    <div class="container form-container">
-        <form action="https://getform.io/f/amdkrvpb" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn-contact">Send Message</button>
-        </form>
-        <p class="form-note">* I'll respond to your inquiry as soon as possible!</p>
-    </div>
-</section>
-
-<footer class="footer">
-    <p>© 2025 Abel Beyene. All rights reserved.</p>
-</footer>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Abel Beyene. All rights reserved.</p>
+    </footer>
 </body>
 </html>
