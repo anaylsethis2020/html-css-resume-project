@@ -1,113 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Abel Beyene</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Abel Beyene</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Abel Beyene</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavProjects"
-          aria-controls="navbarNavProjects" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavProjects">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Page Header -->
-  <section class="py-5 text-center">
-    <div class="container">
-      <h1 class="display-4">Projects</h1>
-      <p class="lead">A selection of my completed web development projects.</p>
-    </div>
-  </section>
-
-  <!-- Projects Grid -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Love Running Project Card -->
-        <div class="col-md-4">
-          <div class="card-flip">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="assets/images/Love-running-project.png" alt="Love Running">
-              </div>
-              <div class="card-back">
-                <h5>Love Running</h5>
-                <p>An interactive community website for runners in Dublin. Includes training plans, gallery, and signup features.</p>
-                <a href="#" class="btn btn-primary">Visit Site</a>
-              </div>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-profile">
+                <img src="assets/images/profile.jpg" alt="Abel Profile" class="profile-img">
+                <h1 class="logo-text">Abel Beyene</h1>
             </div>
-          </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Boardwalk Games Project Card -->
-        <div class="col-md-4">
-          <div class="card-flip">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="assets/images/Broadwalk-games-project.png" alt="Boardwalk Games">
-              </div>
-              <div class="card-back">
-                <h5>Boardwalk Games</h5>
-                <p>A vibrant website for board game enthusiasts with event scheduling and cafe services. Encourages community engagement and fun.</p>
-                <a href="#" class="btn btn-primary">Visit Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Seven Seas Spa Project Card -->
-        <div class="col-md-4">
-          <div class="card-flip">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="assets/images/Seven-sea-project.png" alt="Seven Seas Spa">
-              </div>
-              <div class="card-back">
-                <h5>Seven Seas Spa</h5>
-                <p>A soothing spa website featuring service booking and wellness resources, designed for a calm and relaxing user experience.</p>
-                <a href="#" class="btn btn-primary">Visit Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer -->
-  <footer class="py-3 bg-primary text-white text-center">
-    <div class="container">
-      <small>&copy; 2025 Abel Beyene. All rights reserved.</small>
-    </div>
-  </footer>
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h2>Projects I've Built</h2>
+            <p>Bringing ideas to life through design, creativity, and clean code.</p>
+        </div>
+    </section>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="assets/js/script.js"></script>
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container grid-container">
+
+            <div class="project-card">
+                <a href="https://anaylsethis2020.github.io/love-running/" target="_blank">
+                    <img src="assets/images/Love-running-project.png" alt="Love Running Project">
+                    <h3>Love Running</h3>
+                </a>
+                <p>Fitness event website designed for runners' communities around the world.</p>
+            </div>
+
+            <div class="project-card">
+                <a href="https://anaylsethis2020.github.io/boardwalk-games/" target="_blank">
+                    <img src="assets/images/Broadwalk-games-project.png" alt="Boardwalk Games Project">
+                    <h3>Boardwalk Games</h3>
+                </a>
+                <p>A vibrant site promoting carnival games and family entertainment experiences.</p>
+            </div>
+
+            <div class="project-card">
+                <a href="https://anaylsethis2020.github.io/sevenseas-spa/" target="_blank">
+                    <img src="assets/images/Seven-sea-project.png" alt="Seven Seas Spa Project">
+                    <h3>Seven Seas Spa</h3>
+                </a>
+                <p>Luxury spa website offering wellness retreats and holistic therapies by the ocean.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Abel Beyene. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

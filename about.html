@@ -7,48 +7,70 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Abel Beyene</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-profile">
+                <img src="assets/images/profile.jpg" alt="Abel Profile" class="profile-img">
+                <h1 class="logo-text">Abel Beyene</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- About Hero -->
     <section class="about-hero">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Passionate developer and problem solver dedicated to creating seamless digital experiences through clean code and creative thinking.</p>
+        <div class="about-bg">
+            <img src="assets/images/about-me-custom-background-image.png" alt="About Background">
         </div>
-    </section>
-
-    <section class="about-content">
         <div class="about-text">
-            <h2>Hello, I'm Abel 👋</h2>
-            <p>
-                I'm Abel Beyene — a front-end developer passionate about building engaging, user-centered websites with clean code and creative flair. 
-                <br><br>
-                I've worked on projects like Love Running, Seven Seas Spa, and Boardwalk Games, combining UX, visual design, and solid technical skills.
-                <br><br>
-                I'm constantly learning and currently completing a full-stack bootcamp at Code Institute, aiming to deliver meaningful, accessible, and impactful digital experiences.
-                <br><br>
-                Let's connect and build something amazing together!
-            </p>
-            <a href="https://www.linkedin.com/in/abel-beyene-17847874/" class="btn" target="_blank">View LinkedIn</a>
-        </div>
-        <div class="about-image">
-            <img src="assets/images/download.jpg" alt="Developer Workspace - Abel Beyene">
+            <h2>Who I Am</h2>
+            <p>Creative Front-End Developer | Visionary Coder | Future Innovator</p>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Abel Beyene. All rights reserved.</p>
+    <!-- About Me Content -->
+    <section class="about-content">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="assets/images/profile.jpg" alt="Abel Beyene">
+            </div>
+            <div class="about-description">
+                <h3>Hello, I'm Abel 👋</h3>
+                <p>I’m a passionate front-end developer dedicated to transforming ideas into exceptional web experiences.</p>
+                <p>Through Code Institute's Fullstack Bootcamp, I've developed expertise in HTML5, CSS3, Bootstrap, UX Principles, and responsive web design.</p>
+                <p>Driven by creativity and innovation, I combine clean code with powerful storytelling, ensuring every website leaves a memorable impression. </p>
+                <p>I'm preparing to offer freelance services building inspiring, fast, and mobile-first websites — with a future focus on JavaScript and AI-integrated apps.</p>
+                <a href="assets/images/Abel CV_2025.docx" class="btn-primary" download>Download My CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivational Video Section -->
+    <section class="motivation-video">
+        <video autoplay muted loop class="video-section">
+            <source src="assets/images/about me - steve jobs gif-with audio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h3>“Stay Hungry. Stay Foolish.”</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Abel Beyene. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

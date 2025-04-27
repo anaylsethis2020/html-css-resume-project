@@ -1,117 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services - Abel Beyene</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Abel Beyene</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Abel Beyene</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavServices"
-          aria-controls="navbarNavServices" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavServices">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero d-flex align-items-center text-center">
-    <div class="container">
-      <h1 class="display-4">Services</h1>
-      <p class="lead">I offer a range of services to help your business succeed online.</p>
-    </div>
-  </section>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-profile">
+                <img src="assets/images/profile.jpg" alt="Abel Profile" class="profile-img">
+                <h1 class="logo-text">Abel Beyene</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Services List -->
-  <section class="py-5 reveal">
-    <div class="container">
-      <h2 class="text-center">What I Offer</h2>
-      <div class="row mt-4">
-        <div class="col-md-4 text-center mb-4">
-          <i class="fas fa-code fa-3x text-secondary mb-3"></i>
-          <h4>Custom Web Development</h4>
-          <p>Designing and building responsive websites and web applications tailored to your needs, ensuring quality code and performance.</p>
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <h2>What I Offer</h2>
+            <p>Building the future with clean code, smart design, and unstoppable creativity.</p>
         </div>
-        <div class="col-md-4 text-center mb-4">
-          <i class="fas fa-pencil-ruler fa-3x text-secondary mb-3"></i>
-          <h4>UI/UX Consultation</h4>
-          <p>Improving user interfaces and experiences through expert consultation, wireframes, and user testing strategies.</p>
-        </div>
-        <div class="col-md-4 text-center mb-4">
-          <i class="fas fa-chart-line fa-3x text-secondary mb-3"></i>
-          <h4>Performance Optimization</h4>
-          <p>Enhancing website speed and efficiency by optimizing code, improving accessibility, and implementing best practices.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Technologies & Tools -->
-  <section class="py-5 bg-light reveal">
-    <div class="container text-center">
-      <h2>Technologies I Use</h2>
-      <div class="row justify-content-center mt-4">
-        <div class="col-4 col-md-2 mb-3">
-          <i class="fab fa-github fa-3x text-secondary"></i>
-          <p>GitHub</p>
+    <!-- Available Services -->
+    <section class="available-services">
+        <div class="container">
+            <h3>Available Services</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/images/bootstrap logo.png" alt="Bootstrap">
+                    <h4>Responsive Web Design</h4>
+                    <p>Beautiful mobile-first websites using HTML5, CSS3, and Bootstrap 5.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/git and github.png" alt="GitHub">
+                    <h4>Version Control with GitHub</h4>
+                    <p>Professional code management using Git and GitHub best practices.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/github copilot  and ms365.png" alt="Copilot">
+                    <h4>AI-assisted Coding</h4>
+                    <p>Fast, efficient coding using GitHub Copilot and modern IDE workflows.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/marketing digital GIF by PixAtom.gif" alt="Marketing" class="small-icon">
+                    <h4>UX/UI Planning</h4>
+                    <p>User-centered designs using UX principles to create engaging experiences.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-4 col-md-2 mb-3">
-          <i class="fab fa-stack-overflow fa-3x text-secondary"></i>
-          <p>StackOverflow</p>
-        </div>
-        <div class="col-4 col-md-2 mb-3">
-          <i class="fab fa-bootstrap fa-3x text-secondary"></i>
-          <p>Bootstrap</p>
-        </div>
-        <div class="col-4 col-md-2 mb-3">
-          <i class="fab fa-react fa-3x text-secondary"></i>
-          <p>React</p>
-        </div>
-        <div class="col-4 col-md-2 mb-3">
-          <i class="fab fa-python fa-3x text-secondary"></i>
-          <p>Python</p>
-        </div>
-        <div class="col-4 col-md-2 mb-3">
-          <i class="fab fa-js fa-3x text-secondary"></i>
-          <p>JavaScript</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="py-3 bg-primary text-white text-center">
-    <div class="container">
-      <small>&copy; 2025 Abel Beyene. All rights reserved.</small>
-    </div>
-  </footer>
+    <!-- Upcoming Services -->
+    <section class="upcoming-services">
+        <div class="container">
+            <h3>Upcoming Services</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/images/find me on Slack .gif" alt="Slack Communication" class="small-icon">
+                    <h4>JavaScript Development</h4>
+                    <p>Building interactive front-end applications using Vanilla JavaScript and APIs.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/Code Coding GIF by Nuevo Foundation.gif" alt="Code">
+                    <h4>AI-powered Web Solutions</h4>
+                    <p>Exploring AI tools to create smarter, more dynamic websites and applications.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/Developer Entrepreneurs GIF by Startup Weekend Singapore.gif" alt="Entrepreneur">
+                    <h4>Entrepreneurial Web Services</h4>
+                    <p>Supporting startups and solo founders with high-quality web development solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="assets/js/script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Abel Beyene. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
