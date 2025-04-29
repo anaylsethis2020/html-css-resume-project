@@ -1,153 +1,160 @@
+# Abel Beyene - Professional HTML & CSS Portfolio Website
 
+Welcome to my individual project built as part of the **Code Institute AI-Augmented Full Stack Bootcamp (HTML/CSS/Bootstrap Project)**.  
+This website is a personal portfolio designed to showcase my web development skills, completed projects, and freelance services.
 
-Developer Portfolio Website
+Hosted Live: [View Live Site](https://anaylsethis2020.github.io/html-css-resume-project/)
 
-This project is a personal portfolio website built with HTML, CSS, and Bootstrap, showcasing my front-end development skills. It serves as an online resume and project showcase, intended for potential employers and collaborators. The site is structured with clear navigation (Home, About, Services, Projects, Articles, Contact) and features a hero section, personal profile, project galleries, and interactive elements (animations, video playback). All pages were developed with user experience (UX) principles in mind and deployed to GitHub Pages with a clean Git history and no broken links.
+---
 
-Learning Outcomes Checklist
+## Table of Contents
+- [Overview](#overview)
+- [User Stories](#user-stories)
+- [UX/UI Design Strategy](#uxui-design-strategy)
+- [Features Overview](#features-overview)
+- [Wireframes](#wireframes)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Testing & Validation](#testing--validation)
+- [Future Features](#future-features)
+- [Credits](#credits)
 
-Criterion	Assessment Criteria	Expected Performance	Completed
-1.1	Plan project strategy and goals	Define clear user needs, business goals, and site objectives	✔️
-1.2	Perform UX planning and design	Develop wireframes, user stories, and site maps; document planning process (UX principles)	✔️
-1.3	Implement layout and visual design	Use Bootstrap grid and components to create a clean, responsive UI	✔️
-2.1	Code validation	Ensure HTML and CSS pass W3C validator tools with no errors	✔️
-2.2	Responsive design	Apply media queries for multiple viewports; use semantic HTML for structure	✔️
-3.1	Cloud deployment and version control	Deploy to GitHub Pages/Netlify with commit history and no broken links	✔️
-4.1	Documentation	Create README.md with project overview, screenshots, and feature descriptions	✔️
-5.1	AI-assisted code creation	Use AI tools (e.g. Copilot) to generate code aligned with project goals	✔️
-5.2	AI-assisted debugging	Use AI to identify and fix bugs efficiently	✔️
-5.3	AI-driven optimization	Use AI to optimize code for performance and user experience	✔️
-5.4	Reflect on AI usage	Discuss AI’s role in the development process and outcomes	✔️
+---
 
-UX Design – The 5 Planes
+## Overview
 
-Strategy: The project began by defining user and business goals. The target users are hiring managers and peers who need a clear, professional presentation of my skills. I set out to create an engaging developer portfolio (as noted in the project brief), focusing on clarity and relevance. This meant choosing a light, code-oriented theme inspired by industry portfolios and ensuring content aligns with user expectations (such as quick access to my resume and projects)​
+This project serves two purposes:
+- 📄 **Portfolio Showcase:** Highlighting the projects and skills I've developed.
+- 🌐 **Freelance Service Offering:** Providing potential clients and employers a platform to connect, learn about my services, and get inspired.
 
+The website reflects a strong understanding of responsive design, UX/UI principles, Bootstrap implementation, semantic HTML, and CSS styling.
 
-Scope: The content and features were determined by user needs and business goals. Key features include a prominent hero banner, a concise “About Me” section with a downloadable CV, a showcase of skills and projects, a services summary (e.g. skills listed), a blog/articles section, and a contact form. Each element was scoped to serve the project objectives: for example, the hero section introduces my role and passion, while the projects gallery demonstrates applied knowledge (HTML layout, CSS styling). The scope was managed on a backlog to prioritize “must-have” and “could-have” features. Structure: I designed a logical information architecture. The site navigation is consistent across pages, using semantic HTML (<header>, <nav>, <section>, <footer>) to organize content. Content is grouped by page: the About page holds personal info and CV link, Services lists skills with icons, Projects shows portfolio work with images, and so on. Within pages, the Bootstrap grid organizes sections (e.g. two-column layouts for text and images). Intuitive navigation (collapsible menu on mobile, smooth scrolling to page sections) ensures users find information quickly. Skeleton: Before coding, I sketched wireframes and user stories to plan layout and flow. For example, user stories defined tasks like downloading the CV or reading a project. A Kanban-style planning board was used to visualize and track development tasks (see Figure). I iterated on layouts: the hero section uses a full-width background image with overlay text, the About section uses a two-column grid (image and text), and project cards are laid out in a responsive grid. The structure of each page was clearly mapped out before implementation to guide development. 
+---
 
-Figure: Kanban board of project planning tasks (Backlog, In Progress, Done). An agile planning board was used to manage features and priorities. Each task (like “Hero Section: First Impressions” or “About Me Section”) was labeled as a “Must-have” or “Could-have,” reflecting the project scope. This visual planning ensured that essential UX and design tasks were completed first, and it helped track progress in line with design thinking principles. Surface: The visual design uses a clean, modern style. Consistent colors (dark text on white, with accent colors) and typography were chosen for readability. Images and gifs (e.g. a coding animation) add personality without clutter. Buttons and interactive elements use Bootstrap styling for a polished look (e.g. the “Download My CV” button stands out with color contrast). Alt text is provided for all images (e.g. alt="Abel Beyene" for the profile photo). Attention to spacing, alignment, and responsive breakpoints ensures the site looks professional on all devices.
+## User Stories
 
-Project Planning and Development
+| As a... | I want to... | So that... |
+|:---|:---|:---|
+| Employer | Quickly understand the candidate's skills and projects | I can assess if they are suitable for hiring |
+| Potential Client | View services offered and make inquiries | I can hire for website or application development |
+| Visitor | Learn more about the developer’s skills and story | I can feel confident working with them |
+| User | Easily navigate and contact the developer | I have a smooth, professional browsing experience |
 
-Project planning combined Agile practices with UX thinking. I used user stories to capture requirements (for example: “As a mobile-first visitor, I want the site to be fully responsive and accessible so I can navigate easily.”). These stories guided development. The planning board (shown above) illustrates how tasks moved from “Todo” to “Done,” with features like animations or dark mode labeled as optional enhancements. Throughout development, I iterated on design decisions based on feedback and testing. Screenshots of the site were taken to track UI progress and plan content placement. This structured approach ensured that design thinking—from empathy (user stories) to ideation (wireframes) to implementation—was central to the project.
-Accessibility and Responsive Design
-Accessibility (WCAG) and mobile-first design were integral. I ensured high contrast and readable font sizes across the site. All interactive elements have descriptive labels (e.g. navigation links are clear, the CV download link has an aria-label via descriptive text). Images include meaningful alt text. Forms and buttons are keyboard-accessible. The site’s layout uses Bootstrap’s responsive grid plus custom CSS media queries. Breakpoints target common device widths so that columns stack vertically on small screens. The navigation menu collapses into a hamburger menu on narrow viewports. 
+---
 
-Figure: Mobile-first user story and acceptance criteria for responsive design. A specific user story focused on mobile responsiveness and accessibility drove the CSS strategy. Acceptance criteria included: layout adjusts fluidly to different screen widths, navigation collapses on small screens, font and images scale properly, and no horizontal scrolling occurs. Accordingly, I implemented CSS media queries (max-width: 768px) to change the About section to a single-column layout and adjusted image sizes. Testing on phone, tablet, and desktop confirmed that the design met these criteria, providing a consistent experience. Overall, the site passes the WCAG guidelines for scalable text and intuitive navigation on all devices.
+## UX/UI Design Strategy
 
-Version Control, Deployment, and Validation
+### Strategy
+- Focused on building trust, professionalism, and creativity through layout, writing, and visual appeal.
 
-The project used Git for version control and GitHub for remote hosting. Meaningful commits (often using emoji-conventional style) document each feature or fix. For example, one commit adds the Steve Jobs quote video, another implements responsive navbar styling. The code is stored in a public GitHub repository with a clear commit history. The site is deployed to GitHub Pages, and all internal links and resources work correctly in the live environment. Before deployment, code validation was performed: the W3C Markup Validation Service was used on each HTML file, and the W3C CSS Validator checked the stylesheet. All pages passed validation with no errors. JavaScript console errors were resolved, ensuring a clean, error-free experience. These validation tools confirmed that standards and semantics are correctly applied (e.g. proper doctype, no broken HTML tags), which supports maintainability and accessibility.
+### Scope
+- Showcase projects, offer services, and build a personal brand through strong storytelling.
 
-AI Tools and Reflections
+### Structure
+- Logical flow: Home > About > Services > Projects > Articles > Contact.
+- Simple and intuitive navigation.
 
-AI-assisted development tools were used judiciously. GitHub Copilot provided code suggestions for repetitive parts (like Bootstrap classes for layouts) and helped write initial CSS rules. ChatGPT was used as a coding assistant, for example to troubleshoot the deployment issue on GitHub Pages by suggesting a hard refresh and proper pushing commands (as seen in the VSCode chat panel). AI helped speed up writing boilerplate code (e.g. HTML structure) and offered optimization ideas (like using Flexbox for a grid). However, I made all final decisions on design and content; AI output was always reviewed and modified for correctness and style. This strategic use of AI improved productivity. For instance, when debugging responsive behavior, AI tools suggested specific CSS approaches which I then tested and implemented. In the reflections, I noted that AI contributed primarily as a pair-programmer: it saved time on routine code and pointed out fixes, but the overall architecture and user experience considerations remained human-driven. These tools did not replace original design work or final user testing; instead, they served as efficient helpers. A brief reflection on these tools is included in the README and comments (per the assessment criteria), emphasizing the outcomes (cleaner code, resolved bugs) over the prompts themselves.
+### Skeleton
+- Wireframes created for desktop and mobile views before development.
+- Strong content hierarchy maintained across pages.
 
-Summary of Tools and Technologies
+### Surface
+- Visually pleasing with a mixture of abstract backgrounds, profile photos, minimalistic layouts, and clear call-to-actions.
 
-Languages & Frameworks: HTML5, CSS3, JavaScript (ES6), Bootstrap 5.
-Developer Tools: Visual Studio Code, Git (version control), GitHub (remote repository & Pages), Chrome DevTools (testing).
-Validation & Testing: W3C Markup Validation Service (HTML), W3C CSS Validator, Lighthouse for performance/accessibility, mobile device testing.
-UX Design: Figma (for wireframing and mockups), Google Lighthouse (accessibility scores), custom Kanban board (project planning).
-AI/Assistance: GitHub Copilot for code completion, ChatGPT for code debugging suggestions.
-All project criteria (LO1–LO5) have been met and documented. The website is live and fully functional, demonstrating professional design, responsiveness, accessibility, code quality, and use of modern development workflows. This README provides an overview of the project goals, design approach, development process, and the technologies used.
+---
 
-In Summary ...
+## Features Overview
 
-Abel Beyene - Personal Portfolio Website
+| Feature | Description | Status |
+|:---|:---|:---|
+| Responsive Website Layout | Fully mobile-first responsive site using HTML5, CSS3, Bootstrap5 principles | ✅ Completed |
+| Navigation Bar | Sticky header with clear navigation links across all pages | ✅ Completed |
+| Hero Section (Home Page) | Dynamic headline with professional profile photo, strong visual impact | ✅ Completed |
+| About Me Section | Includes Hello World GIF, profile image, coding GIF, downloadable CV | ✅ Completed |
+| Steve Jobs Video | Playable motivational video on user click, optimized loading | ✅ Completed |
+| Testimonial Carousel | Auto-rotating Bootstrap carousel showcasing testimonials | ✅ Completed |
+| Services Page | Offers detailed list of available and upcoming freelance services | ✅ Completed |
+| Projects Page | Portfolio grid linking to live deployed GitHub projects | ✅ Completed |
+| Articles and Newsletter Section | Reading area with "Read More" buttons + email subscription form | ✅ Completed |
+| Contact Form | Fully working contact form sending inquiries to student email address | ✅ Completed |
+| UX/UI Principles | Strategy, Scope, Structure, Skeleton, Surface fully applied | ✅ Completed |
+| Accessibility | Semantic HTML5 tags, alt attributes, proper link structures | ✅ Completed |
+| Validation | HTML and CSS validated with no major errors (W3C Validators) | ✅ Completed |
 
-Project Overview
+---
 
-Welcome to my HTML & CSS personal portfolio project. This website presents my journey as a front-end developer, highlighting my skills, showcasing completed projects, and offering users the ability to connect with me professionally.
+## Wireframes
 
-This portfolio is fully responsive and includes key sections such as About, Services, Projects, Articles, and Contact.
+- Hand-drawn and digital wireframes created before development.
+- Focused on:
+  - Mobile-first structure
+  - Desktop scaling
+  - Section spacing
+  - Logical content flow
 
-View Live: GitHub Pages Deployment
+---
 
-Features
+## Technologies Used
 
-Landing Page (Home): Professional navigation bar linking to all sections.
+- **HTML5** for markup structure
+- **CSS3** for custom styles
+- **Bootstrap 5** for responsive layout
+- **GitHub** for project hosting and version control
+- **Visual Studio Code** with GitHub Copilot for AI code assistance
+- **Photoshop/Canva** for image editing
+- **W3C HTML Validator** and **W3C CSS Validator** for code checking
 
-About Me Page: Biography, professional journey, downloadable CV, "Hello World" animation GIF, and inspirational "Code is Poetry" GIF.
+---
 
-Services Page: Highlights of services I offer (Responsive Design, UX Design Consultation, GitHub support, etc.).
+## Deployment
 
-Projects Page: Interactive project cards showcasing previous work like "Love Running" and "Seven Seas Spa".
+The project was deployed using **GitHub Pages**:
+- Created repository on GitHub.
+- Developed locally in Visual Studio Code.
+- Committed regularly with clear messages.
+- Deployed using GitHub Pages from `main` branch.
 
-Articles Page: Curated articles for tech inspiration and business ideas, linking externally for more resources.
+Live Website: [https://anaylsethis2020.github.io/html-css-resume-project/](https://anaylsethis2020.github.io/html-css-resume-project/)
 
-Contact Page: Clean and simple form to send messages via Getform integration.
+---
 
-Fixed background visuals for an enhanced professional look.
+## Testing & Validation
 
-Accessible and responsive design for desktop, tablet, and mobile screens.
+| Test | Result |
+|:---|:---|
+| HTML Validation | Passed W3C validator with no critical errors |
+| CSS Validation | Passed W3C validator with no critical errors |
+| Browser Testing | Passed on Chrome, Edge, Firefox |
+| Device Testing | Passed on desktop, tablet, mobile screens |
+| Accessibility | Alt text provided, semantic HTML used properly |
+| Manual Testing | All navigation, links, forms, and buttons function correctly |
 
-Technologies Used
+---
 
-HTML5
+## Future Features
 
-CSS3
+- Blog articles fully managed via a CMS (WordPress Headless or Netlify CMS).
+- JavaScript integration for advanced form validation.
+- Portfolio expansion with more case studies and client projects.
+- Dark mode toggle button.
 
-Bootstrap 5 (for some layout enhancements)
+---
 
-Git & GitHub (Version control and hosting)
+## Credits
 
-GitHub Pages (Deployment)
+- Special thanks to:
+  - Code Institute walkthroughs for learning foundation
+  - Inspiration from sites like Tobias Ahlin and Josh Comeau
+  - UX/UI methodologies inspired by Jesse James Garrett's 5 Planes of UX
+- Images and icons:
+  - Custom designs, free-to-use GIFs, Pixabay free resources
 
-VS Code with GitHub Copilot assistance
+---
 
-Testing
+## Author
 
-All navigation links were manually tested on Chrome, Firefox, and Edge.
+**Abel Beyene**  
+📧 Email: viewabel@outlook.com  
+🔗 LinkedIn: [Abel Beyene LinkedIn Profile](https://www.linkedin.com/in/abel-beyene-17847874/)
 
-Responsive behavior was tested using Chrome DevTools (iPhone, iPad, Desktop resolutions).
-
-Getform contact submission was manually tested.
-
-All external "Read More" links on the Articles page open in a new tab.
-
-Images have appropriate alt attributes for accessibility.
-
-Lighthouse Audit Score: Passed Accessibility and Best Practices standards.
-
-Bugs
-
-Initial: Minor layout shifts on mobile devices were corrected with media queries.
-
-Fixed: Steve Jobs video playback was fixed with correct play button script and media settings.
-
-No major unresolved bugs found at time of deployment.
-
-Future Enhancements
-
-Add a downloadable PDF version of the CV for better compatibility.
-
-Add basic animation effects (e.g., smooth scrolling, hover effects) purely with CSS.
-
-Enhance Articles page with custom CMS integration.
-
-Deployment
-
-Project is hosted on GitHub Pages.
-
-To clone the repository locally:
-
-git clone https://github.com/anaylsethis2020/html-css-resume-project.git
-
-Credits
-
-Code Institute - For providing the course structure and assessment criteria.
-
-GitHub Copilot - Assisted with code suggestions and layout structuring.
-
-Unsplash, Pexels - Stock images used where necessary.
-
-Ezgif.com - Used for GIF conversion.
-
-Acknowledgements
-
-Special thanks to my mentors, tutors, and classmates for their continued support throughout this journey.
-
-Author: Abel Beyene
-
+---
