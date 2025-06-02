@@ -1,4 +1,8 @@
-/* Reset */
+/* --------------------------------------------------
+Section: Global Reset and Base Styles
+Description: Resets default margins, paddings, and sets base typography and layout.
+Matches HTML: <html> and overall document
+-------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -17,63 +21,113 @@ body {
     margin: auto;
 }
 
+/* --------------------------------------------------
+Section: Header/Navigation Section
+Description: Styles for the header, logo, and navigation links.
+Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
+-------------------------------------------------- */
+
+/* Styles for the header container */
 .header {
-    width: 100%;
-    background: #0d1b2a;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    z-index: 999;
+    width: 100%; /* Full width of the viewport */
+    background: #0d1b2a; /* Dark blue background */
+    padding: 10px 0; /* Vertical padding for spacing */
+    position: fixed; /* Fixes the header at the top of the page */
+    top: 0; /* Aligns the header to the top of the viewport */
+    z-index: 999; /* Ensures the header stays above other elements */
 }
 
+/* Styles for the navigation container */
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space between logo and navigation links */
+    align-items: center; /* Vertically center the items */
 }
 
+/* Styles for the logo and profile container */
 .logo-profile {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Add space between the image and the text */
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center; /* Vertically center the logo and text */
+    gap: 10px; /* Spacing between the profile image and text */
 }
 
+/* Styles for the profile image */
 .profile-img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #e63946;
+    width: 40px; /* Fixed width for the image */
+    height: 40px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image fits within the container */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #e63946; /* Red border around the image */
 }
 
+/* Styles for the logo text */
 .logo-text {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-left: 10px; /* Optional: Add additional spacing if needed */
+    font-size: 1.5rem; /* Larger font size for the logo text */
+    color: #fff; /* White text color */
+    margin-left: 10px; /* Spacing between the text and the image */
 }
 
+/* Styles for the navigation links container */
 .nav-links {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Flexbox layout for horizontal alignment */
 }
 
+/* Styles for each navigation link item */
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 20px; /* Spacing between each navigation link */
 }
 
+/* Styles for the navigation links */
 .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    padding: 5px 10px;
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* White text color */
+    font-weight: 500; /* Medium font weight for better readability */
+    padding: 5px 10px; /* Padding for clickable area */
 }
 
+/* Styles for the active or hovered navigation link */
 .nav-links a.active,
 .nav-links a:hover {
-    background: #e63946;
-    border-radius: 5px;
+    background: #e63946; /* Red background for active or hovered link */
+    border-radius: 5px; /* Rounded corners for the background */
 }
 
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px; /* Spacing between nav links */
+}
+
+.nav-link {
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+    color: #e63946; /* Red text on hover */
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+.nav-link.active {
+    color: #fff; /* White text for active link */
+    background-color: #e63946; /* Red background for active link */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* --------------------------------------------------
+Section: Hero Section
+Description: Styles for the hero area with background image and text overlay.
+Matches HTML: <section class="hero-section">, <div class="hero-bg">, <div class="hero-text">
+-------------------------------------------------- */
 .hero-section {
     position: relative;
     overflow: hidden;
@@ -86,11 +140,11 @@ body {
 .hero-bg img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: scale-down;
     display: block;
 }
 
-/* Create a translucent overlay on top of the background image */
+/* Translucent overlay on top of hero image */
 .hero-bg::after {
     content: "";
     position: absolute;
@@ -98,22 +152,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust opacity and color as needed */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-/* Hero text container stands out */
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff; /* Solid background for clarity */
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
     color: #000;
     text-align: center;
-    z-index: 2; /* Above the overlay */
+    z-index: 2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-size: 2rem;
 }
@@ -124,6 +177,11 @@ body {
     margin-bottom: 10px;
 }
 
+/* --------------------------------------------------
+Section: Highlights Section
+Description: Styles for the highlight cards grid.
+Matches HTML: <section class="highlights">, <div class="highlights-grid">, <div class="highlight-card">
+-------------------------------------------------- */
 .highlights {
     padding: 60px 0;
     background-color: #f8f9fa;
@@ -152,6 +210,69 @@ body {
     border-radius: 8px 8px 0 0;
 }
 
+/* --------------------------------------------------
+Section: Neon Quote Sections (Quote 1, 2, 3)
+Description: Styles for full-width motivational neon quote sections.
+Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class="quote-container">, and <p> elements.
+-------------------------------------------------- */
+.neon-quote-box {
+    background: #000; /* Default black background */
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* .full-bg is used to provide an alternate dark background */
+.full-bg {
+    background: #111;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Constrain quote content width */
+.quote-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Common style for quote text */
+.neon-quote-box p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Neon text colors for each quote line */
+.neon-line1 {
+    color: #ffff99; /* Neon yellow for Quote 1 */
+    text-shadow: 0 0 3px #ffff99, 0 0 6px #ffff99;
+}
+
+.neon-line2 {
+    color: #ffff99; /* Neon yellow for Quote 2 */
+    text-shadow: 0 0 3px #ffff99, 0 0 6px #ffff99;
+}
+
+.neon-line3 {
+    color: #ff66cc; /* Hot pink for Quote 3 */
+    text-shadow: 0 0 3px #ff66cc, 0 0 6px #ff66cc;
+}
+
+/* --------------------------------------------------
+Section: Footer Section
+Description: Styles for the footer area.
+Matches HTML: <footer class="footer">
+-------------------------------------------------- */
 .footer {
     background: #0d1b2a;
     color: #fff;
@@ -163,7 +284,11 @@ body {
     width: 100%;
 }
 
-/* About Page */
+/* --------------------------------------------------
+Section: About Page and Content
+Description: Styles for the About page sections including hero, content grid, text, and images.
+Matches HTML: <section class="about-hero">, <div class="about-container">, <img class="about-gif">, <div class="about-text">
+-------------------------------------------------- */
 .about-hero {
     text-align: center;
     padding: 80px 0 40px 0;
@@ -174,18 +299,20 @@ body {
     background-attachment: fixed;
 }
 
-/* About Content Section */
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* Three equal columns */
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
     gap: 20px;
     align-items: start;
-    /* Align items at the top */
     padding: 40px 20px;
+    margin-top: 20px; /* Reduce top margin */
+    margin-bottom: 20px; /* Reduce bottom margin */
+    padding-top: 10px; /* Reduce top padding */
+    padding-bottom: 10px; /* Reduce bottom padding */
+    min-height: 50px; /* Optional: Ensure a minimum height for alignment testing */
+    background-color: #f9f9f9; /* Optional: Subtle background color for testing */
 }
 
-/* Hello World GIF */
 .about-gif {
     max-width: 100%;
     height: auto;
@@ -196,7 +323,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* About Text */
 .about-text {
     text-align: left;
     margin-top: 20px;
@@ -227,7 +353,6 @@ body {
     background-color: #d62839;
 }
 
-/* Profile Photo */
 .profile-photo {
     max-width: 100%;
     height: auto;
@@ -235,7 +360,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Coding GIF */
 .coding-gif {
     max-width: 100%;
     height: auto;
@@ -243,11 +367,14 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Center Column: Download Button */
+/* --------------------------------------------------
+Section: Download Button (Center Column)
+Description: Styles for the download button on the About page.
+Matches HTML: <div class="download-button">
+-------------------------------------------------- */
 .download-button {
     text-align: center;
     margin-top: 20px;
-    /* Add spacing above the button */
 }
 
 .download-button .btn-primary {
@@ -264,7 +391,11 @@ body {
     background-color: #d62839;
 }
 
-/* Subscription Form */
+/* --------------------------------------------------
+Section: Subscription Form
+Description: Styles for the newsletter subscription form.
+Matches HTML: <form class="subscription-form">
+-------------------------------------------------- */
 .subscription-form input[type="email"] {
     width: 100%;
     /* Make the input box take up the full width of its container */
@@ -295,36 +426,85 @@ body {
     background-color: #d62839;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-container {
-        grid-template-columns: 1fr;
-        /* Stack columns vertically */
-        text-align: center;
-    }
-
-    .about-item {
-        margin-bottom: 30px;
-    }
-
-    .about-text {
-        text-align: center;
-    }
-
-    .subscription-form {
-        display: flex;
-        flex-direction: column;
-        /* Stack input and button vertically */
-        gap: 15px;
-    }
-
-    .subscription-form input[type="email"],
-    .subscription-form button {
-        width: 100%;
-        /* Full width for smaller screens */
-    }
+/* --------------------------------------------------
+Section: Testimonials Carousel
+Description: Styles for the testimonials section and carousel.
+Matches HTML: <section class="testimonials-section">, <div class="testimonial">
+-------------------------------------------------- */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
 }
 
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #0d1b2a;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #e63946;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.articles-list li {
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+Section: Motivation Video & Quote (Steve Jobs)
+Description: Styles for the motivation video section and its associated button.
+Matches HTML: <section class="motivation-video">
+-------------------------------------------------- */
+.motivation-video {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.motivation-video .btn-primary {
+    margin-top: 20px;
+}
+
+/* --------------------------------------------------
+Section: Motivation Quote (Neon Handwriting)
+Description: Styles for a separate motivational quote styled as neon text.
+Matches HTML: <div class="motivation-quote">
+-------------------------------------------------- */
+.motivation-quote {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.motivation-quote .neon-first {
+    color: #ff66cc;
+    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+}
+
+.motivation-quote .neon-rest {
+    color: #ffff66;
+    text-shadow: 0 0 5px #ffff66, 0 0 10px #ffff66, 0 0 20px #ffff66;
+}
+
+/* --------------------------------------------------
+Section: Contact Section
+Description: Styles for the contact form and its elements.
+Matches HTML: <section class="contact-section">, <form class="contact-form">
+-------------------------------------------------- */
 .contact-section {
     padding: 80px 0;
     text-align: center;
@@ -359,139 +539,279 @@ body {
     border-color: #e63946;
 }
 
+/* --------------------------------------------------
+Section: Primary Button Styles
+Description: Shared styles for primary buttons across the site.
+Matches HTML: Any element with class "btn-primary"
+-------------------------------------------------- */
 .btn-primary {
-    background-color: #e63946;
-    color: #fff;
+    background-color: #e63946; /* Default background color */
+    color: #fff; /* Default text color */
     padding: 12px 20px;
-    border: none;
+    border: 2px solid transparent; /* Transparent border by default */
     border-radius: 5px;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it behave like a button */
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
 }
 
 .btn-primary:hover {
-    background-color: #d62839;
+    background-color: #d62839; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    border-color: #000; /* Black outline on hover */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
-/* Responsive Design Media Queries here... */
-
-/* === Steve Jobs Motivation Video Section === */
-.motivation-video {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.motivation-video .btn-primary {
-    margin-top: 20px;
-}
-
-.motivation-quote {
-    font-family: 'Pacifico', cursive;  /* Neon cursive style */
-    font-size: 2.2rem;                   /* Base font size */
-    text-align: center;                  /* Center the text */
-    background: rgba(0, 0, 0, 0.6);       /* Dark semi-transparent background for glow */
+/* --------------------------------------------------
+Section: Services Section (Orange Box)
+Description: Adds a border and background color to the services section.
+-------------------------------------------------- */
+.services {
+    background-color: #fff7e6; /* Light orange background */
+    border: 2px solid #ffa500; /* Orange border */
     padding: 20px;
-    border-radius: 5px;
-    margin: 30px 0;
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Spacing between sections */
 }
 
-.motivation-quote .neon-first {
-    color: #ff66cc;  /* Hot pink neon for the first line */
-    text-shadow: 
-      0 0 5px #ff66cc, 
-      0 0 10px #ff66cc, 
-      0 0 20px #ff66cc;
+.services h2 {
+    color: #ff8c00; /* Dark orange for the heading */
+    text-align: center; /* Center the heading */
+}   
+
+.services h4 {
+    color: #e67e22; /* Dark orange for headings */
 }
 
-.motivation-quote .neon-rest {
-    color: #ffff66;  /* Light yellow neon for the remaining text */
-    text-shadow: 
-      0 0 5px #ffff66, 
-      0 0 10px #ffff66, 
-      0 0 20px #ffff66;
+.services p {
+    color: #555; /* Neutral text color */
 }
 
-/* Testimonial Carousel Section */
-.testimonials-section {
-    background-color: #f8f9fa;
-    padding: 60px 20px;
+/* Remove underline and default link styling for the services link */
+.services-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+/* Optional: Add hover effect for the services link */
+.services-link:hover .services {
+    background-color: #ffe4b2; /* Slightly darker orange on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* --------------------------------------------------
+Section: Projects Section (Yellow Box)
+Description: Adds a border and background color to the projects section.
+-------------------------------------------------- */
+.projects {
+    background-color: #fffde7; /* Light yellow background */
+    border: 2px solid #ffd700; /* Yellow border */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Spacing between sections */
+}
+
+.projects h2 {
+    color: #f4c20d; /* Golden yellow for the heading */
+    text-align: center; /* Center the heading */
+}
+
+.project-card {
+    background-color: #fff; /* White background for project cards */
+    border: 1px solid #ddd; /* Subtle border for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.project-card h4 {
+    color: #f4c20d; /* Golden yellow for project titles */
+}
+
+.project-card p {
+    color: #555; /* Neutral text color */
+}
+
+/* Remove underline and default link styling for the projects link */
+.projects-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+/* Optional: Add hover effect for the projects link */
+.projects-link:hover .projects {
+    background-color: #fff9c4; /* Slightly darker yellow on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Add hover effect for the projects section */
+.projects {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.projects:hover {
+    transform: scale(1.02); /* Slightly scale up the section */
+    background-color: #fff9c4; /* Slightly darker yellow background on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* --------------------------------------------------
+Section: Articles Section (Green Box)
+Description: Adds a border and background color to the articles section.
+-------------------------------------------------- */
+.articles {
+    background-color: #e8f5e9; /* Light green background */
+    border: 2px solid #4caf50; /* Green border */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Spacing between sections */
+}
+
+.articles h2 {
+    color: #388e3c; /* Dark green for the heading */
+    text-align: center; /* Center the heading */
+}
+
+.articles-list li a {
+    color: #2e7d32; /* Dark green for article links */
+    text-decoration: none;
+}
+
+.articles-list li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* --------------------------------------------------
+Section: Media Queries / Responsive Design
+Description: Adjustments applied for smaller screens.
+Matches HTML: Entire layout when viewed on mobile devices
+-------------------------------------------------- */
+@media (max-width: 768px) {
+    .highlights-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .neon-quote-box p {
+        font-size: 2.5rem;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-item {
+        margin-bottom: 30px;
+    }
+    
+    .about-text {
+        text-align: center;
+    }
+    
+    .subscription-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .subscription-form input[type="email"],
+    .subscription-form button {
+        width: 100%;
+    }
+}
+
+/* Add hover effect for the articles section */
+.articles {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.articles:hover {
+    transform: scale(1.02); /* Slightly scale up the section */
+    background-color: #d7f7d7; /* Slightly darker green background on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* --------------------------------------------------
+Section: Custom Navbar Styles
+Description: Styles for the custom Bootstrap navbar.
+Matches HTML: <nav class="navbar navbar-expand-lg navbar-light bg-light">
+-------------------------------------------------- */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 20px;
+}
+
+.navbar-toggler {
+    border: none; /* Remove default border */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+}
+
+/* Custom icon for the toggler */
+.navbar-toggler::after {
+    content: '\2630'; /* Unicode for hamburger icon */
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Collapse styles */
+.collapse {
+    display: none !important;
+}
+
+.navbar-collapse {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item {
+    width: 100%;
     text-align: center;
 }
 
-.testimonials-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #0d1b2a;
+.nav-link {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.testimonial-image {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 2px solid #e63946;
+.nav-link:hover,
+.nav-link.active {
+    background-color: #e63946;
+    color: #fff;
 }
 
-.testimonial p {
-    font-size: 1rem;
-    color: #555;
-}
+/* Media query for responsive navbar */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
 
-.articles-list li {
-    margin-bottom: 10px;
-}
+    .nav-item {
+        width: auto;
+    }
 
-/* Neon Quote Box Styles */
-.neon-quote-box {
-  background: #111;                    /* Default dark background */
-  padding: 40px 20px;                  /* Soft padding */
-  width: 100%; /* Ensure the background spans the full width */
-  text-align: center;
-  border-radius: 0; /* Remove rounded corners for full-width look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add depth */
-  margin: 0; /* Remove any margin that might limit full width */
+    .nav-link {
+        padding: 10px 15px;
+    }
 }
-
-.quote-container {
-  max-width: 1000px; /* Constrain the text content */
-  margin: 0 auto; /* Center the text content */
-}
-
-.neon-quote-box p {
-  font-family: 'Dancing Script', cursive; /* Elegant cursive font */
-  font-size: 3rem;                        /* 3rem font-size for desktop */
-  letter-spacing: 1px;
-  line-height: 1.3;
-  margin: 0;
-  padding: 10px 0;
-}
-
-/* Quote 2 specific styling */
-.quote2 {
-  background: #222; /* Slightly lighter background for distinction */
-}
-
-.quote2 .neon-line2 {
-  color: #ffff99; /* Soft yellow neon */
-  text-shadow: 0 0 3px #ffff99, 0 0 6px #ffff99;
-}
-
-/* Quote 3 specific styling */
-.quote3 {
-  background: #333; /* Another distinct dark tone */
-}
-
-.quote3 .neon-line3 {
-  color: #ff66cc; /* Hot pink neon */
-  text-shadow: 0 0 3px #ff66cc, 0 0 6px #ff66cc;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .neon-quote-box p {
-    font-size: 2.5rem;
-  }
-}
-
