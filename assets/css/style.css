@@ -261,6 +261,7 @@ Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class
     border-radius: 10px; /* Rounded corners */
     padding: 50px 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+    position: relative; /* For positioning the new <p> tag */
 }
 
 /* .full-bg is used to provide an alternate dark background */
@@ -289,6 +290,29 @@ Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class
     text-shadow: none; /* Removed glowing text-shadow */
     margin: 0;
     padding: 10px 0;
+}
+
+/* Adjusted .neon-line and .additional-text styles for single-line layout */
+.neon-quote-box p.neon-line {
+    text-align: left; /* Align text to the left */
+    font-size: 2.5rem; /* Keep font size consistent */
+    margin: 10px 0; /* Remove extra margin */
+    padding: 10px 0; /* Adjust padding */
+}
+
+.neon-quote-box p.additional-text {
+    display: none; /* Initially hidden */
+    text-align: left; /* Align text to the left */
+    font-size: 2.5rem; /* Match font size of .neon-line */
+    color: #000; /* Black text */
+    font-weight: 600; /* Slightly increased font weight */
+    text-shadow: none; /* Removed glowing text-shadow */
+    margin: 0; /* Remove extra margin */
+    padding: 10px 0; /* Adjust padding */
+}
+
+.neon-quote-box:hover p.additional-text {
+    display: inline; /* Show the text on hover */
 }
 
 /* --------------------------------------------------
@@ -1188,4 +1212,23 @@ Page: index.html
     text-shadow: none; /* Removed glowing text-shadow */
     margin: 0;
     padding: 10px 0;
+}
+
+.neon-quote-box p.additional-text {
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 10px; /* Position at the bottom of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem; /* Match font size of .neon-line */
+    color: #000; /* Black text */
+    font-weight: 600; /* Slightly increased font weight */
+    text-shadow: none; /* Removed glowing text-shadow */
+    margin: 0;
+    padding: 10px 0;
+}
+
+.neon-quote-box:hover p.additional-text {
+    display: inline; /* Show the text on hover */
 }
