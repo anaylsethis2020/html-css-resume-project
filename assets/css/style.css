@@ -2,7 +2,9 @@
 Section: Global Reset and Base Styles
 Description: Resets default margins, paddings, and sets base typography and layout.
 Matches HTML: <html> and overall document
+Page: All pages
 -------------------------------------------------- */
+/* This section applies to the entire document and resets default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +27,11 @@ body {
 Section: Header/Navigation Section
 Description: Styles for the header, logo, and navigation links.
 Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
+Page: All pages
 -------------------------------------------------- */
 
 /* Styles for the header container */
+/* This section styles the header at the top of the page */
 .header {
     width: 100%; /* Full width of the viewport */
     background: #0d1b2a; /* Dark blue background */
@@ -38,6 +42,7 @@ Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
 }
 
 /* Styles for the navigation container */
+/* This section aligns the navigation links and logo */
 .nav-container {
     display: flex; /* Flexbox layout for alignment */
     justify-content: space-between; /* Space between logo and navigation links */
@@ -45,6 +50,7 @@ Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
 }
 
 /* Styles for the logo and profile container */
+/* This section styles the logo and profile image in the header */
 .logo-profile {
     display: flex; /* Flexbox layout for alignment */
     align-items: center; /* Vertically center the logo and text */
@@ -52,6 +58,7 @@ Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
 }
 
 /* Styles for the profile image */
+/* This section makes the profile image circular and adds a border */
 .profile-img {
     width: 40px; /* Fixed width for the image */
     height: 40px; /* Fixed height for the image */
@@ -61,11 +68,18 @@ Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
 }
 
 /* Styles for the logo text */
+/* This section styles the text next to the profile image */
 .logo-text {
     font-size: 1.5rem; /* Larger font size for the logo text */
     color: #fff; /* White text color */
     margin-left: 10px; /* Spacing between the text and the image */
 }
+
+/* --------------------------------------------------
+Section: Navigation Links Container
+Description: Styles for the navigation links container.
+Matches HTML: <ul class="nav-links">
+-------------------------------------------------- */
 
 /* Styles for the navigation links container */
 .nav-links {
@@ -73,10 +87,22 @@ Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
     display: flex; /* Flexbox layout for horizontal alignment */
 }
 
+/* --------------------------------------------------
+Section: Navigation Link Items
+Description: Styles for each navigation link item.
+Matches HTML: <li>
+-------------------------------------------------- */
+
 /* Styles for each navigation link item */
 .nav-links li {
     margin-left: 20px; /* Spacing between each navigation link */
 }
+
+/* --------------------------------------------------
+Section: Navigation Links
+Description: Styles for the navigation links.
+Matches HTML: <a>
+-------------------------------------------------- */
 
 /* Styles for the navigation links */
 .nav-links a {
@@ -85,6 +111,12 @@ Matches HTML: <header class="header">, <nav>, <div class="logo-profile">
     font-weight: 500; /* Medium font weight for better readability */
     padding: 5px 10px; /* Padding for clickable area */
 }
+
+/* --------------------------------------------------
+Section: Active or Hovered Navigation Links
+Description: Styles for the active or hovered navigation link.
+Matches HTML: <a class="active"> or <a:hover>
+-------------------------------------------------- */
 
 /* Styles for the active or hovered navigation link */
 .nav-links a.active,
@@ -181,6 +213,7 @@ Matches HTML: <section class="hero-section">, <div class="hero-bg">, <div class=
 Section: Highlights Section
 Description: Styles for the highlight cards grid.
 Matches HTML: <section class="highlights">, <div class="highlights-grid">, <div class="highlight-card">
+Page: index.html
 -------------------------------------------------- */
 .highlights {
     padding: 60px 0;
@@ -201,6 +234,12 @@ Matches HTML: <section class="highlights">, <div class="highlights-grid">, <div 
     width: 250px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .highlight-card img {
@@ -286,6 +325,7 @@ Matches HTML: <footer class="footer">
 Section: About Page and Content
 Description: Styles for the About page sections including hero, content grid, text, and images.
 Matches HTML: <section class="about-hero">, <div class="about-container">, <img class="about-gif">, <div class="about-text">
+Page: about.html
 -------------------------------------------------- */
 .about-hero {
     text-align: center;
@@ -515,49 +555,12 @@ Matches HTML: <div class="motivation-quote">
     text-shadow: 0 0 5px #ffff66, 0 0 10px #ffff66, 0 0 20px #ffff66;
 }
 
-/* --------------------------------------------------
-Section: Contact Section
-Description: Styles for the contact form and its elements.
-Matches HTML: <section class="contact-section">, <form class="contact-form">
--------------------------------------------------- */
-.contact-section {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.contact-form {
-    margin-top: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #e63946;
-}
 
 /* --------------------------------------------------
 Section: Primary Button Styles
 Description: Shared styles for primary buttons across the site.
 Matches HTML: Any element with class "btn-primary"
+Page: All pages
 -------------------------------------------------- */
 .btn-primary {
     background-color: #e63946; /* Default background color */
@@ -579,8 +582,10 @@ Matches HTML: Any element with class "btn-primary"
 }
 
 /* --------------------------------------------------
-Section: Services Section (Orange Box)
-Description: Adds a border and background color to the services section.
+Section: Services Section 
+Description: Styles for the "Featured Services" section, including background color, border, and text alignment.
+Matches HTML: <section class="services">, <h2>, <h4>, <p>
+Page: index.html, services.html
 -------------------------------------------------- */
 .services {
     background-color: #fff7e6; /* Light orange background */
@@ -615,9 +620,22 @@ Description: Adds a border and background color to the services section.
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+/* Add hover effect for the featured services section */
+.services {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.services:hover {
+    transform: scale(1.02); /* Slightly scale up the section */
+    background-color: #ffe4b2; /* Slightly darker orange background on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
 /* --------------------------------------------------
-Section: Projects Section (Yellow Box)
-Description: Adds a border and background color to the projects section.
+Section: Projects Section 
+Description: Styles for the "Projects" section, including background color, border, and hover effects.
+Matches HTML: <section class="projects">, <h2>, <div class="project-card">
+Page: projects.html
 -------------------------------------------------- */
 .projects {
     background-color: #fffde7; /* Light yellow background */
@@ -674,8 +692,10 @@ Description: Adds a border and background color to the projects section.
 }
 
 /* --------------------------------------------------
-Section: Articles Section (Green Box)
-Description: Adds a border and background color to the articles section.
+Section: Articles Section 
+Description: Styles for the "Articles" section, including background color, border, and hover effects.
+Matches HTML: <section class="articles">, <h2>, <ul class="articles-list">
+Page: articles.html
 -------------------------------------------------- */
 .articles {
     background-color: #e8f5e9; /* Light green background */
@@ -700,8 +720,49 @@ Description: Adds a border and background color to the articles section.
 }
 
 /* --------------------------------------------------
+Section: Contact Section
+Description: Styles for the "Contact" section, including form layout and input styling.
+Matches HTML: <section class="contact-section">, <form class="contact-form">
+Page: contact.html
+-------------------------------------------------- */
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+/* --------------------------------------------------
 Section: Media Queries / Responsive Design
 Description: Adjustments applied for smaller screens.
+page: All pages
 Matches HTML: Entire layout when viewed on mobile devices
 -------------------------------------------------- */
 @media (max-width: 768px) {
@@ -754,6 +815,7 @@ Matches HTML: Entire layout when viewed on mobile devices
 Section: Custom Navbar Styles
 Description: Styles for the custom Bootstrap navbar.
 Matches HTML: <nav class="navbar navbar-expand-lg navbar-light bg-light">
+Page: All pages have a navbar
 -------------------------------------------------- */
 .navbar {
     background-color: #f8f9fa; /* Light background */
@@ -816,8 +878,10 @@ Matches HTML: <nav class="navbar navbar-expand-lg navbar-light bg-light">
 }
 
 /* --------------------------------------------------
-Section: Projects Timeline
+Sub-section: Projects Timeline
 Description: Styles for the vertical timeline of projects.
+Matches HTML: <section class="projects-timeline-section">, <div class="timeline-container-wrapper">, <div class="timeline">
+Page: projects.html
 -------------------------------------------------- */
 .projects-timeline-section {
     padding: 50px 20px;
@@ -1012,9 +1076,10 @@ Description: Styles for the vertical timeline of projects.
 }
 
 /* --------------------------------------------------
-Section: News Ticker
+Sub-section: News Ticker
 Description: Styles for the news ticker at the top of the page.
 Matches HTML: <div class="news-ticker">
+Page: index.html
 -------------------------------------------------- */
 /* Updated News Ticker Styling */
 .news-ticker {
@@ -1070,7 +1135,7 @@ Matches HTML: <div class="news-ticker">
 }
 
 /* --------------------------------------------------
-Section: Detailed News Ticker
+Sub-section: Detailed News Ticker
 Description: Styles for the detailed news ticker in articles.html.
 Matches HTML: <div class="news-ticker-detailed">
 -------------------------------------------------- */
