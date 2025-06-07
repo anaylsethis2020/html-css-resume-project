@@ -165,6 +165,17 @@ Matches HTML: <section class="hero-section">, <div class="hero-bg">, <div class=
     overflow: hidden;
 }
 
+/* Added hover effect for hero section */
+.hero-section {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.hero-section:hover {
+    transform: scale(1.02); /* Slightly scale up the section */
+    background-color: #f0f0f0; /* Slightly lighter background on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
 .hero-bg {
     position: relative;
 }
@@ -861,6 +872,17 @@ Page: All pages have a navbar
     width: 100%;
 }
 
+/* Added collapsible menu styles for mobile screens */
+.navbar-collapse {
+  display: none;
+}
+.navbar-toggler {
+  display: block;
+}
+.navbar-toggler.active + .navbar-collapse {
+  display: flex;
+}
+
 .navbar-nav {
     width: 100%;
     display: flex;
@@ -1126,9 +1148,10 @@ Page: index.html
 }
 
 .ticker-content span {
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold; /* Make text bold */
   margin-right: 50px;
-  color: #000;
-  font-weight: bold;
+  color: #000; /* Black text */
   position: relative;
 }
 

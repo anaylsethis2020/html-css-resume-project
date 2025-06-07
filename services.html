@@ -36,14 +36,13 @@
             <h1>Professional Web Development Services</h1>
             <p>Building future-proof websites with clean code, creative design, and tailored digital solutions for
                 businesses and individuals.</p>
-        </div>
-    </section>
-
-    <!-- Discount Banner -->
-    <section class="discount-banner">
-        <div class="container">
-            <img src="assets/images/20 percent off discount banner.png"
-                alt="20% OFF Website Offer - Expires 31 May 2025" class="discount-img">
+            <!-- UX/UI Planning Tile -->
+            <div class="service-tile" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+                <img src="assets/images/marketing digital GIF by PixAtom.gif" alt="Marketing" style="width: 100%; max-height: 200px; object-fit: cover;">
+                <h4>UX/UI Planning & Strategy</h4>
+                <p>User-centered experiences designed around the UX 5 planes framework: Strategy, Scope, Structure, Skeleton, Surface.</p>
+                <a href="#" class="btn-primary">Learn More</a>
+            </div>
         </div>
     </section>
 
@@ -51,93 +50,119 @@
     <section class="available-services">
         <div class="container">
             <h2>Tailored Services to Grow Your Brand</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="assets/images/bootstrap logo.png" alt="Bootstrap">
-                    <h4>Responsive Web Design</h4>
-                    <p>Mobile-first websites using HTML5, CSS3, and Bootstrap 5. Elegant, functional, and future-ready
-                        designs for all devices.</p>
+            <div class="services-grid" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+                <!-- Responsive Design Tile -->
+                <div class="service-tile" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+                    <img src="assets/images/bootstrap logo.png" alt="Bootstrap Service" style="width: 100%;">
+                    <h3>Responsive Design</h3>
+                    <p>Crafting websites that look great on any device.</p>
+                    <a href="#" class="btn-primary">Learn More</a>
                 </div>
-                <div class="service-card">
-                    <img src="assets/images/git and github.png" alt="GitHub">
-                    <h4>Version Control & GitHub</h4>
-                    <p>Professional code versioning, collaboration, and GitHub repository management for streamlined
-                        projects.</p>
+                <!-- Version Control Tile -->
+                <div class="service-tile" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+                    <img src="assets/images/git-github logo.png" alt="GitHub Service" style="width: 100%;">
+                    <h3>Version Control</h3>
+                    <p>Efficient collaboration and code management.</p>
+                    <a href="#" class="btn-primary">Learn More</a>
                 </div>
-                <div class="service-card">
-                    <img src="assets/images/github copilot  and ms365.png" alt="Copilot">
+                <!-- AI-Enhanced Coding Tile -->
+                <div class="service-tile" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+                    <img src="assets/images/github copilot  and ms365.png" alt="Copilot" style="width: 100%;">
                     <h4>AI-Enhanced Coding</h4>
-                    <p>Fast and efficient coding solutions using GitHub Copilot, AI optimizations, and IDE best
-                        practices for rapid delivery.</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/images/marketing digital GIF by PixAtom.gif" alt="Marketing" class="small-icon">
-                    <h4>UX/UI Planning & Strategy</h4>
-                    <p>User-centered experiences designed around the UX 5 planes framework: Strategy, Scope, Structure,
-                        Skeleton, Surface.</p>
+                    <p>Fast and efficient coding solutions using GitHub Copilot, AI optimizations, and IDE best practices for rapid delivery.</p>
+                    <a href="#" class="btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Upcoming Services -->
+    <!-- Upcoming Services Section -->
     <section class="upcoming-services">
         <div class="container">
             <h2>Upcoming Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="assets/images/find me on Slack .gif" alt="Slack Communication" class="small-icon">
-                    <h4>JavaScript Development</h4>
-                    <br>
-                    <p>Coming soon: dynamic, interactive websites using Vanilla JavaScript and modern API integrations
-                        for real-world applications.</p>
+            <div class="services-timeline" style="display: flex; flex-direction: column; gap: 40px;">
+                <!-- JavaScript Development Card -->
+                <div class="service-timeline-item" style="display: flex; align-items: center; gap: 20px;">
+                    <img src="assets/images/javascript logo.gif" alt="JavaScript Development" style="width: 200px; height: 200px; object-fit: cover;">
+                    <div>
+                        <h4>JavaScript Development</h4>
+                        <p>Coming soon: dynamic, interactive websites using Vanilla JavaScript and modern API integrations for real-world applications. This service will focus on creating seamless user experiences and leveraging the latest JavaScript frameworks.</p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="assets/images/Code Coding GIF by Nuevo Foundation.gif" alt="Code">
-                    <h4>AI-Powered Web Solutions</h4>
-                    <p>Innovative websites leveraging AI technologies for smarter, data-driven user experiences and
-                        business solutions.</p>
-                        <br>
+                <!-- AI-Powered Web Solutions Card -->
+                <div class="service-timeline-item" style="display: flex; align-items: center; gap: 20px; flex-direction: row-reverse;">
+                    <img src="assets/images/Code Coding GIF by Nuevo Foundation.gif" alt="AI-Powered Web Solutions" style="width: 200px; height: 200px; object-fit: cover;">
+                    <div>
+                        <h4>AI-Powered Web Solutions</h4>
+                        <p>Innovative websites leveraging AI technologies for smarter, data-driven user experiences and business solutions. This service will include AI-driven analytics, personalized user interfaces, and automation features.</p>
+                        <a href="#" class="btn-primary" style="margin-left: auto;">Learn More</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="assets/images/Developer Entrepreneurs GIF by Startup Weekend Singapore.gif"
-                        alt="Entrepreneur">
-                    <h4>Entrepreneurial Web Services</h4>
-                    <p>Supporting startups, entrepreneurs, and solo founders with impactful and affordable website and
-                        app development packages.</p>
+                <!-- Entrepreneurial Web Services Card -->
+                <div class="service-timeline-item" style="display: flex; align-items: center; gap: 20px;">
+                    <img src="assets/images/Developer Entrepreneurs GIF by Startup Weekend Singapore.gif" alt="Entrepreneurial Web Services" style="width: 200px; height: 200px; object-fit: cover;">
+                    <div>
+                        <h4>Entrepreneurial Web Services</h4>
+                        <p>Supporting startups, entrepreneurs, and solo founders with impactful and affordable website and app development packages. This service will focus on scalability, cost-effectiveness, and tailored solutions for small businesses.</p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- PostgreSQL Development Card -->
+                <div class="service-timeline-item" style="display: flex; align-items: center; gap: 20px; flex-direction: row-reverse;">
+                    <img src="assets/images/PostgreSQL.png" alt="PostgreSQL Development" style="width: 200px; height: 200px; object-fit: cover;">
+                    <div>
+                        <h4>PostgreSQL Development</h4>
+                        <p>Advanced database solutions for scalable applications. This service will include database optimization, secure data storage, and integration with modern web technologies.</p>
+                        <a href="#" class="btn-primary" style="margin-left: auto;">Learn More</a>
+                    </div>
+                </div>
+                <!-- PythonDjango Development Card -->
+                <div class="service-timeline-item" style="display: flex; align-items: center; gap: 20px;">
+                    <img src="assets/images/pythonDjango.png" alt="PythonDjango Development" style="width: 200px; height: 200px; object-fit: cover;">
+                    <div>
+                        <h4>PythonDjango Development</h4>
+                        <p>Robust web applications built with Django and Python. This service will focus on rapid development, clean code practices, and integration with third-party APIs.</p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Python Development Card -->
+                <div class="service-timeline-item" style="display: flex; align-items: center; gap: 20px; flex-direction: row-reverse;">
+                    <img src="assets/images/official python logo.gif" alt="Python Development" style="width: 200px; height: 200px; object-fit: cover;">
+                    <div>
+                        <h4>Python Development</h4>
+                        <p>Innovative solutions using Python for data analysis and automation. This service will include machine learning integrations, data visualization, and scripting for business processes.</p>
+                        <a href="#" class="btn-primary" style="margin-right: auto;">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Subscription Form -->
-    <section class="subscription">
-    <div class="container">
-        <br>
-        <h2>'Subscribe now to get the latest offers'</h2>
-        <form class="subscription-form">
-            <input type="email" id="email" name="email" placeholder="Enter your email address" list="email-domains" required>
-            <datalist id="email-domains">
-                <option value="@gmail.com">
-                <option value="@gmail.co.uk">
-                <option value="@gmail.x">
-                <option value="@outlook.com">
-                <option value="@outlook.co.uk">
-                <option value="@outlook.x">
-                <option value="@yahoo.com">
-                <option value="@yahoo.co.uk">
-                <option value="@yahoo.x">
-                <option value="@hotmail.com">
-                <option value="@hotmail.co.uk">
-                <option value="@hotmail.x">
-                <option value="@icloud.com">
-                <option value="@icloud.co.uk">
-                <option value="@icloud.x">
-            </datalist>
-            <button type="submit" class="btn-primary">Subscribe</button>
-        </form>
-    </div>
-</section>
+    <!-- Discount Banner and Subscription Form -->
+    <section class="offers-section" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div class="discount-banner" style="flex: 1;">
+            <div class="container">
+                <img src="assets/images/20 percent off discount banner.png" alt="20% OFF Website Offer - Expires 31 May 2025" class="discount-img" style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+        <div class="subscription" style="flex: 1;">
+            <div class="container">
+                <h2>Subscribe now to get the latest offers</h2>
+                <form class="subscription-form">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" list="email-domains" required style="width: 100%; padding: 10px; border-radius: 5px;">
+                    <datalist id="email-domains">
+                        <option value="@gmail.com">
+                        <option value="@outlook.com">
+                        <option value="@yahoo.com">
+                        <option value="@hotmail.com">
+                        <option value="@icloud.com">
+                    </datalist>
+                    <button type="submit" class="btn-primary" style="margin-top: 10px; padding: 10px 20px; border-radius: 5px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
