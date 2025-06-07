@@ -1257,3 +1257,389 @@ Page: index.html
 .neon-quote-box:hover p.additional-text {
     display: inline; /* Show the text on hover */
 }
+
+/* --------------------------------------------------
+Section: Services cross Items
+Description: Styles for individual items in the services timeline.
+Matches HTML: <div class="service-timeline-item">
+Page: services.html
+-------------------------------------------------- */
+.service-timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-timeline-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-timeline-item .btn-primary {
+    margin-top: 10px;
+    align-self: center;
+}
+
+/* --------------------------------------------------
+Section: Offers Section
+Description: Styles for the special offers section with a gradient background and discount caption.
+Matches HTML: <section class="offers-section">, <p>
+Page: index.html
+-------------------------------------------------- */
+.offers-section {
+    background: linear-gradient(135deg, #f3f4f6, #e0e0e0);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.offers-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.offers-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.offers-section p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.8;
+    background: linear-gradient(90deg, #f3f3f3, #e0e0e0);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* --------------------------------------------------
+Section: Discount Countdown Timer
+Description: Styles for the countdown timer in the offers section.
+Matches HTML: <div class="countdown-timer">
+Page: index.html
+-------------------------------------------------- */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.countdown-timer div {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.countdown-timer div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* --------------------------------------------------
+Section: Newsletter Subscription Section
+Description: Styles for the newsletter subscription section with a gradient background.
+Matches HTML: <section class="newsletter-section">, <h2>, <form>
+Page: index.html
+-------------------------------------------------- */
+.newsletter-section {
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.newsletter-form button {
+    padding: 12px 20px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #d62839;
+}
+
+/* --------------------------------------------------
+Section: Image Gallery Section
+Description: Styles for the image gallery section with grid layout.
+Matches HTML: <section class="gallery-section">, <div class="gallery-grid">
+Page: index.html
+-------------------------------------------------- */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+/* --------------------------------------------------
+Section: FAQ Accordion Section
+Description: Styles for the FAQ section with accordion functionality.
+Matches HTML: <section class="faq-section">, <div class="accordion">
+Page: index.html
+-------------------------------------------------- */
+.faq-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-header:hover {
+    background-color: #e1e1e1;
+}
+
+.accordion-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    background-color: #fff;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+/* --------------------------------------------------
+Section: Custom Scrollbar
+Description: Styles for a custom scrollbar for webkit browsers.
+Matches HTML: Entire document
+-------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e63946;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d62839;
+}
+
+/* --------------------------------------------------
+Section: Accessibility Improvements
+Description: Enhancements for better accessibility, including focus states and contrast adjustments.
+Matches HTML: All interactive elements
+-------------------------------------------------- */
+:focus {
+    outline: 3px solid #e63946;
+    outline-offset: 2px;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 57, 86, 0.4);
+}
+
+/* High contrast mode adjustments */
+@media screen and (forced-colors: active) {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        border-color: #000 !important;
+    }
+
+    .btn-primary {
+        background-color: #007bff !important;
+        color: #fff !important;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3 !important;
+    }
+
+    .navbar,
+    .footer {
+        background-color: #f8f9fa !important;
+    }
+
+    .header {
+        background: #0d1b2a !important;
+    }
+
+    .highlight-card {
+        background: #fff !important;
+        border-color: #ddd !important;
+    }
+
+    .timeline-card {
+        background-color: #ffffff !important;
+        border-color: #e0e0e0 !important;
+    }
+
+    .accordion-header {
+        background-color: #f1f1f1 !important;
+    }
+
+    .accordion-content {
+        background-color: #fff !important;
+    }
+}
+
+/* --------------------------------------------------
+Section: Print Styles
+Description: Styles specifically for print layout.
+Matches HTML: Entire document
+-------------------------------------------------- */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .header,
+    .footer {
+        display: none;
+    }
+
+    .btn,
+    .btn-primary {
+        display: none;
+    }
+
+    .highlight-card,
+    .timeline-card,
+    .accordion {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        orphans: 3;
+        widows: 3;
+    }
+}
