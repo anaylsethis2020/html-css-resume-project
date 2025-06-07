@@ -255,11 +255,12 @@ Description: Styles for full-width motivational neon quote sections.
 Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class="quote-container">, and <p> elements.
 -------------------------------------------------- */
 .neon-quote-box {
-    background: linear-gradient(135deg, #1a1a1a, #333);
-    border: 2px solid #444;
-    border-radius: 10px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Rounded corners */
     padding: 50px 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
 /* .full-bg is used to provide an alternate dark background */
@@ -283,27 +284,11 @@ Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class
 .neon-quote-box p {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
-    color: #fff; /* Fully white text */
+    color: inherit; /* Inherit text color */
     font-weight: 600; /* Slightly increased font weight */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing white text-shadow */
+    text-shadow: none; /* Removed glowing text-shadow */
     margin: 0;
     padding: 10px 0;
-}
-
-/* Neon text colors for each quote line */
-.neon-line1 {
-    color: #ffff99; /* Neon yellow for Quote 1 */
-    text-shadow: 0 0 3px #ffff99, 0 0 6px #ffff99;
-}
-
-.neon-line2 {
-    color: #ffff99; /* Neon yellow for Quote 2 */
-    text-shadow: 0 0 3px #ffff99, 0 0 6px #ffff99;
-}
-
-.neon-line3 {
-    color: #ff66cc; /* Hot pink for Quote 3 */
-    text-shadow: 0 0 3px #ff66cc, 0 0 6px #ff66cc;
 }
 
 /* --------------------------------------------------
@@ -1184,11 +1169,23 @@ Page: index.html
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Rounded corners */
+    padding: 50px 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
 .neon-quote-box:hover {
     background-color: #fff; /* White background */
     color: #000; /* Black text */
-    font-weight: bold; /* Make text stronger */
-    box-shadow: 0 0 10px #e63946, 0 0 20px #e63946, 0 0 30px #e63946; /* Vibrant red neon glow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.neon-quote-box p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: inherit; /* Inherit text color */
+    font-weight: 600; /* Slightly increased font weight */
+    text-shadow: none; /* Removed glowing text-shadow */
+    margin: 0;
+    padding: 10px 0;
 }
