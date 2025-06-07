@@ -1011,25 +1011,57 @@ Description: Styles for the vertical timeline of projects.
     }
 }
 
-/* News Ticker Styling */
+/* --------------------------------------------------
+Section: News Ticker
+Description: Styles for the news ticker at the top of the page.
+Matches HTML: <div class="news-ticker">
+-------------------------------------------------- */
+/* Updated News Ticker Styling */
 .news-ticker {
   overflow: hidden;
   white-space: nowrap;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   border-top: 1px solid #ddd;
   padding: 10px 0;
   font-size: 14px;
   font-family: Arial, sans-serif;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticker-label {
+  background-color: #e63946;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: -40px; /* Adjusted to bring closer to the box */
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.ticker-label:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 .ticker-content {
   display: inline-block;
-  animation: ticker-scroll 15s linear infinite;
+  animation: ticker-scroll 20s linear infinite;
 }
 
 .ticker-content span {
   margin-right: 50px;
-  color: #333;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+}
+
+.ticker-content span::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #e63946;
+  margin-left: 10px;
 }
 
 @keyframes ticker-scroll {
