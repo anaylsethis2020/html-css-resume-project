@@ -296,17 +296,19 @@ Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class
 .neon-quote-box p.neon-line {
     text-align: left; /* Align text to the left */
     font-size: 2.5rem; /* Keep font size consistent */
-    margin: 10px 0; /* Remove extra margin */
+    margin: 0; /* Remove extra margin */
     padding: 10px 0; /* Adjust padding */
+    color: #ff66cc; /* Neon pink color */
+    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc; /* Neon glow effect */
 }
 
 .neon-quote-box p.additional-text {
     display: none; /* Initially hidden */
     text-align: left; /* Align text to the left */
     font-size: 2.5rem; /* Match font size of .neon-line */
-    color: #000; /* Black text */
+    color: #ffff66; /* Neon yellow color */
     font-weight: 600; /* Slightly increased font weight */
-    text-shadow: none; /* Removed glowing text-shadow */
+    text-shadow: 0 0 5px #ffff66, 0 0 10px #ffff66, 0 0 20px #ffff66; /* Neon glow effect */
     margin: 0; /* Remove extra margin */
     padding: 10px 0; /* Adjust padding */
 }
