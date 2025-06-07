@@ -1032,10 +1032,10 @@ Matches HTML: <div class="news-ticker">
   background-color: #e63946;
   color: #ffffff;
   font-weight: bold;
-  padding: 5px 10px;
-  margin-top: -40px; /* Adjusted to bring closer to the box */
+  padding: 10px 10px;
+  margin-top: -42px; /* Adjusted to bring closer to the box */
   position: absolute;
-  left: 0;
+  left: 10px; /* Position label to the right of the ticker */
   transition: transform 0.3s ease;
 }
 
@@ -1065,6 +1065,44 @@ Matches HTML: <div class="news-ticker">
 }
 
 @keyframes ticker-scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* --------------------------------------------------
+Section: Detailed News Ticker
+Description: Styles for the detailed news ticker in articles.html.
+Matches HTML: <div class="news-ticker-detailed">
+-------------------------------------------------- */
+.news-ticker-detailed {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.ticker-content {
+  display: flex;
+  animation: ticker-scroll-detailed 20s linear infinite;
+}
+
+.ticker-item {
+  margin-right: 50px;
+  color: #333;
+}
+
+.ticker-item .title {
+  font-weight: bold;
+}
+
+.ticker-item .summary {
+  margin-left: 10px;
+}
+
+@keyframes ticker-scroll-detailed {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
