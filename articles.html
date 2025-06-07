@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles - Abel Beyene</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .news-ticker-detailed {
+          overflow: hidden;
+          white-space: nowrap;
+          background-color: #f8f9fa;
+          border-bottom: 1px solid #ddd;
+          padding: 10px 0;
+          font-size: 14px;
+          font-family: Arial, sans-serif;
+        }
+
+        .ticker-content {
+          display: flex;
+          animation: ticker-scroll-detailed 20s linear infinite;
+        }
+
+        .ticker-item {
+          margin-right: 50px;
+          color: #333;
+        }
+
+        .ticker-item .title {
+          font-weight: bold;
+        }
+
+        .ticker-item .summary {
+          margin-left: 10px;
+        }
+
+        @keyframes ticker-scroll-detailed {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+      </style>
 </head>
 <body>
 
@@ -27,6 +61,32 @@
             </nav>
         </div>
     </header>
+
+    <!-- News Ticker -->
+    <div class="news-ticker-detailed">
+        <div class="ticker-content">
+            <div class="ticker-item">
+                <span class="title">Gemini 2 Pro launches</span>
+                <span class="summary">A revolutionary AI-powered IDE for developers. <a href="https://example.com">Read more →</a></span>
+            </div>
+            <div class="ticker-item">
+                <span class="title">Jules AI beta for debugging</span>
+                <span class="summary">Streamline your debugging process with AI. <a href="https://example.com">Read more →</a></span>
+            </div>
+            <div class="ticker-item">
+                <span class="title">Google I/O: Meet Gemma</span>
+                <span class="summary">Google unveils its latest AI assistant. <a href="https://example.com">Read more →</a></span>
+            </div>
+            <div class="ticker-item">
+                <span class="title">GitHub Copilot update</span>
+                <span class="summary">New features for enhanced coding assistance. <a href="https://example.com">Read more →</a></span>
+            </div>
+            <div class="ticker-item">
+                <span class="title">OpenAI Dev Day: What's New</span>
+                <span class="summary">Exciting announcements from OpenAI. <a href="https://example.com">Read more →</a></span>
+            </div>
+        </div>
+    </div>
 
     <!-- Articles Hero -->
     <section class="articles-hero">

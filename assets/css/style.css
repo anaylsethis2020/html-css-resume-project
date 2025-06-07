@@ -1010,3 +1010,29 @@ Description: Styles for the vertical timeline of projects.
         align-items: flex-start;
     }
 }
+
+/* News Ticker Styling */
+.news-ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker-scroll 15s linear infinite;
+}
+
+.ticker-content span {
+  margin-right: 50px;
+  color: #333;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
