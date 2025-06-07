@@ -60,7 +60,7 @@
                     <p>Offering freelance services in responsive web design, branding pages, and UX consultation. Future
                         focus: AI-driven websites and smarter apps.</p>
                     <div class="download-button">
-                        <a href="assets/docs/Abel_cv_2025.docx" download class="btn-primary">Download My CV</a>
+                        <a href="assets/docs/Abel_cv_2025.pdf" download class="btn-primary">Download My CV</a>
                     </div>
                 </div>
 
@@ -80,24 +80,29 @@
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
+                    <!-- Testimonial 1 -->
                     <div class="carousel-item active">
                         <div class="testimonial text-center">
                             <img src="assets/images/employee relations manager.png" alt="Employee Relations Manager"
                                 class="rounded-circle mb-3 testimonial-image">
                             <p>"Abel is incredibly hardworking and detail-oriented. A pleasure to work with."</p>
                             <p>- Employee Relations Manager</p>
+                            <div class="rating">★★★★★</div>
                         </div>
                     </div>
 
+                    <!-- Testimonial 2 -->
                     <div class="carousel-item">
                         <div class="testimonial text-center">
                             <img src="assets/images/my coding teacher.png" alt="Coding Instructor"
                                 class="rounded-circle mb-3 testimonial-image">
                             <p>"Excellent performance. Shows great potential in web development."</p>
                             <p>- Coding Instructor</p>
+                            <div class="rating">★★★★★</div>
                         </div>
                     </div>
 
+                    <!-- Testimonial 3 -->
                     <div class="carousel-item">
                         <div class="testimonial text-center">
                             <img src="assets/images/my mentor Stephen Owen.jpeg" alt="Mentor Stephen Owen"
@@ -105,23 +110,30 @@
                             <p>"Abel demonstrates outstanding dedication and continuous improvement. Highly
                                 recommended."</p>
                             <p>- Mentor Stephen Owen</p>
+                            <div class="rating">★★★★★</div>
                         </div>
                     </div>
 
                 </div>
 
-                <!-- Carousel controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
+                <!-- Carousel navigation dots with profile thumbnails -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Employee Relations Manager">
+                        <img src="assets/images/employee relations manager.png" alt="Employee Relations Manager"
+                            class="rounded-circle thumbnail-dot">
+                    </button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Coding Instructor">
+                        <img src="assets/images/my coding teacher.png" alt="Coding Instructor"
+                            class="rounded-circle thumbnail-dot">
+                    </button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                        aria-label="Mentor Stephen Owen">
+                        <img src="assets/images/my mentor Stephen Owen.jpeg" alt="Mentor Stephen Owen"
+                            class="rounded-circle thumbnail-dot">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -133,7 +145,8 @@
                 <source src="assets/images/about-me-steve-jobs-gif-with-audio.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <button class="btn-primary" onclick="document.getElementById('steveVideo').play();">▶️ Play Steve Jobs Quote</button>
+            <button class="btn-primary" onclick="document.getElementById('steveVideo').play();">▶️ Play Steve Jobs Quote
+            </button>
         </div>
     </section>
 
