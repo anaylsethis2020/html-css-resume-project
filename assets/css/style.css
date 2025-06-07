@@ -283,8 +283,9 @@ Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class
 .neon-quote-box p {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
-    color: #f5f5f5;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: #fff; /* Fully white text */
+    font-weight: 600; /* Slightly increased font weight */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing white text-shadow */
     margin: 0;
     padding: 10px 0;
 }
@@ -1170,4 +1171,24 @@ Matches HTML: <div class="news-ticker-detailed">
 @keyframes ticker-scroll-detailed {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+}
+
+/* --------------------------------------------------
+Section: Neon Quote Hover Effect
+Description: Adds hover effect to neon quote elements.
+Matches HTML: <section class="neon-quote-box">
+Page: index.html
+-------------------------------------------------- */
+
+.neon-quote-box {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.neon-quote-box:hover {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-weight: bold; /* Make text stronger */
+    box-shadow: 0 0 10px #e63946, 0 0 20px #e63946, 0 0 30px #e63946; /* Vibrant red neon glow */
 }
