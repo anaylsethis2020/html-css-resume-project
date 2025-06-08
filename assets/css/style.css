@@ -1014,14 +1014,16 @@ Matches HTML: <section class="projects-timeline-section">, <div class="timeline-
 Page: projects.html
 -------------------------------------------------- */
 .projects-timeline-section {
-    padding: 50px 20px;
+    padding: clamp(20px, 5vw, 50px) clamp(10px, 2vw, 20px);
     background-color: #f8f9fa;
-    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100vh; /* Prevent overflow beyond viewport */
 }
 
 .timeline-container-wrapper {
     max-width: 960px;
     margin: 0 auto;
+    padding: clamp(10px, 2vw, 20px); /* Responsive padding */
 }
 
 .timeline-main-title {
@@ -1061,7 +1063,7 @@ Page: projects.html
 /* Marker on the central line */
 .timeline-marker {
     position: absolute;
-    top: 35px; /* Adjust to align with where the date/connector visually meets the line */
+    top: clamp(20px, 5vw, 35px); /* Adjust marker position */
     left: 50%;
     transform: translateX(-50%);
     width: 18px;
@@ -1073,10 +1075,11 @@ Page: projects.html
 }
 
 .timeline-content-wrapper {
-    width: calc(50% - 30px); /* Adjusted to provide space from the central line */
+    width: calc(50% - clamp(15px, 3vw, 30px)); /* Responsive width */
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: clamp(10px, 2vw, 20px); /* Responsive padding */
 }
 
 .timeline-left {
@@ -1759,6 +1762,16 @@ html, body {
 
 .offers-section {
     margin-bottom: 20px; /* Add spacing to ensure visibility */
+}
+
+/* Fix scrollability issue for the projects page */
+html, body {
+    height: auto; /* Allow content to determine height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.projects-timeline-section {
+    margin-top: 20px; /* Add spacing to ensure visibility */
 }
 
 /* Responsive adjustments for zoom levels below 67% */
