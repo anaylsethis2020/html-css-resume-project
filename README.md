@@ -131,6 +131,28 @@ Live Website: [https://anaylsethis2020.github.io/html-css-resume-project/](https
 
 ---
 
+## ✅ EBI Improvements Implemented
+
+As part of the assessment process, a list of "Even Better If" (EBI) improvements was provided to enhance the site's structure, responsiveness, and accessibility. All points listed below were fully addressed and completed.
+
+- ✅ **Navigation Consistency:** Unified navigation structure across all pages and implemented correct active state detection.
+- ✅ **Social Media Integration:** Added LinkedIn profile link with icon in footer across all pages for professional networking.
+- ✅ **Hero Text Readability:** Adjusted padding and spacing to prevent overlap with background image on all screen sizes.
+- ✅ **Typography for Quotes:** Standardized font styling and added subtle background for visual consistency.
+- ✅ **Testimonial Section:** Rebuilt as a responsive Bootstrap carousel with custom thumbnail navigation.
+- ✅ **Services Page Layout:** Converted into responsive Bootstrap card grid with detailed service descriptions.
+- ✅ **Image Optimization:** Renamed all image files to use underscores/hyphens and optimized for web performance.
+- ✅ **Projects Timeline:** Implemented vertical alternating layout with date connectors for visual progression.
+- ✅ **Articles Page Structure:** Added news ticker for tech updates and improved article list formatting.
+- ✅ **Mobile Navigation:** Fixed responsive behavior and ensured smooth mobile user experience.
+- ✅ **Code Documentation:** Added comprehensive HTML and CSS comments for better code maintainability.
+- ✅ **Form Accessibility:** Enhanced contact and subscription forms with proper ARIA labels and validation.
+
+✅ All improvements are now live on the deployed site:  
+🔗 [Live Site](https://anaylsethis2020.github.io/html-css-resume-project/)
+
+---
+
 ## Future Features
 
 - Blog articles fully managed via a CMS (WordPress Headless or Netlify CMS).
