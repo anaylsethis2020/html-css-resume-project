@@ -1803,3 +1803,64 @@ html, body {
         margin: auto;
     }
 }
+
+/* --------------------------------------------------
+Section: Newsletter Signup Section
+Description: Styles for the newsletter signup section with image and form.
+Matches HTML: <div class="newsletter-signup">, <div class="newsletter-bg">, <div class="signup-content">
+Page: index.html
+-------------------------------------------------- */
+.newsletter-signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .newsletter-bg img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .signup-content {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .newsletter-form button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .newsletter-form button:hover {
+        background-color: #d62839;
+    }
+
+.articles-hero h2 {
+        margin-top: 20px; /* Add spacing from the navbar */
+        text-decoration: underline; /* Add underline to the heading */
+        font-size: 2rem; /* Ensure the heading is distinctive */
+    }
