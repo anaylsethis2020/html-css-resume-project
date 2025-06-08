@@ -386,6 +386,26 @@ body {
 }
 
 /* --------------------------------------------------
+Section: Footer Social Icons
+Description: Styles for social media icons in the footer
+Matches HTML: <i class="fab fa-linkedin">
+-------------------------------------------------- */
+footer a {
+    text-decoration: none;
+}
+
+footer a i {
+    color: #0077b5;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    transition: opacity 0.3s ease;
+}
+
+footer a i:hover {
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------
 Section: About Page and Content
 Description: Styles for the About page sections including hero, content grid, text, and images.
 Matches HTML: <section class="about-hero">, <div class="about-container">, <img class="about-gif">, <div class="about-text">
