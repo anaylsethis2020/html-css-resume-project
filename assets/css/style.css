@@ -16,6 +16,9 @@ body {
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .container {
@@ -328,6 +331,25 @@ Matches HTML: <section class="neon-quote-box full-bg quoteX">, nested <div class
     display: inline; /* Show the text on hover */
 }
 
+/* Fix overlapping issue for neon lines and additional text */
+.neon-quote-box .quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Add spacing between neon lines and additional text */
+}
+
+.neon-line1, .neon-line2, .neon-line3 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem); /* Ensure responsive font size */
+    margin-bottom: 5px; /* Add margin to separate from additional text */
+}
+
+.additional-text {
+    font-size: clamp(1rem, 1.5vw, 1.8rem); /* Ensure responsive font size */
+    margin-top: 5px; /* Add margin to separate from neon lines */
+}
+
 /* --------------------------------------------------
 Section: Footer Section
 Description: Styles for the footer area.
@@ -342,6 +364,25 @@ Matches HTML: <footer class="footer">
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Ensure footer stays at the bottom of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 /* --------------------------------------------------
@@ -820,6 +861,61 @@ Matches HTML: Entire layout when viewed on mobile devices
     .subscription-form input[type="email"],
     .subscription-form button {
         width: 100%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .header {
+        padding: 5px 0;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .profile-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        padding: 8px 0;
+    }
+
+    .logo-text {
+        font-size: 1.4rem;
+    }
+
+    .profile-img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 85%;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .profile-img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -1614,7 +1710,7 @@ Matches HTML: Entire document
 @media print {
     * {
         -webkit-print-color-adjust: exact;
-        color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     body {
@@ -1641,5 +1737,56 @@ Matches HTML: Entire document
     h1, h2, h3, h4, h5, h6 {
         orphans: 3;
         widows: 3;
+    }
+}
+
+/* Fix scrollability issues */
+.hero-section {
+    height: auto; /* Allow content to determine height */
+    overflow: visible; /* Ensure content is scrollable */
+}
+
+.services {
+    height: auto; /* Allow content to determine height */
+    overflow: visible; /* Ensure content is scrollable */
+}
+
+/* Fix scrollability issue for the services page */
+html, body {
+    height: auto; /* Allow content to determine height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.offers-section {
+    margin-bottom: 20px; /* Add spacing to ensure visibility */
+}
+
+/* Responsive adjustments for zoom levels below 67% */
+@media (max-width: 67%) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .services .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services .col-md-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .discount-banner img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .subscription {
+        width: 90%;
+        margin: auto;
     }
 }
